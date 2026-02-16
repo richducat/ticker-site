@@ -5,49 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FROGZRGAY-TRADER 6.9</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
     :root{
-      --bg:#0b0b0b; --amber:#f59e0b; --amber2:#fbbf24; --amber-dim:#7c2d12; --green:#22c55e; --red:#ef4444;
+      --bg:#06080f; --amber:#22d3ee; --amber2:#60a5fa; --amber-dim:#0f766e; --green:#22c55e; --red:#ef4444;
     }
-    *{box-sizing:border-box; image-rendering:pixelated;}
+    *{box-sizing:border-box;}
     body{margin:0;background:var(--bg);color:var(--amber2);font-family:'VT323',monospace;text-transform:uppercase;}
-    .scanlines{position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0) 2px,rgba(0,0,0,.18) 3px,rgba(0,0,0,.18) 4px);mix-blend-mode:multiply;}
     .wrap{min-height:100vh;}
-    .topbar{display:flex;justify-content:space-between;align-items:center;border-bottom:4px solid var(--amber-dim);padding:8px 12px;background:#0a0a0a;}
-    .badge{background:var(--amber2);color:#000;padding:8px 12px;font-weight:700;letter-spacing:1px;font-size:18px;}
-    .status{display:flex;gap:16px;align-items:center;font-size:16px;opacity:.95;}
+    .topbar{display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid var(--amber-dim);padding:8px 12px;background:#0a0a0a;}
+    .badge{background:var(--amber2);color:#000;padding:8px 12px;font-weight:700;letter-spacing:1px;font-size:20px;}
+    .status{display:flex;gap:16px;align-items:center;font-size:18px;opacity:.95;}
     .dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;margin-right:6px;}
-    .ticker{border-bottom:1px solid var(--amber-dim);background:rgba(251,191,36,.10);overflow:hidden;white-space:nowrap;padding:10px 0;color:var(--amber2);font-size:18px;}
+    .ticker{border-bottom:1px solid var(--amber-dim);background:rgba(251,191,36,.10);overflow:hidden;white-space:nowrap;padding:10px 0;color:var(--amber2);font-size:20px;}
     .ticker span{display:inline-block;padding-left:100%;animation:scroll 35s linear infinite;}
     @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 
     .grid{padding:14px;display:grid;grid-template-columns:repeat(12,1fr);gap:12px;max-width:1700px;margin:0 auto;}
-    .card{border:2px solid var(--amber-dim);background:#0f0f0f;box-shadow:inset 0 0 0 2px rgba(251,191,36,.12);padding:10px;}
-    .title{font-size:16px;color:#d97706;}
-    .big{font-size:56px;color:var(--amber2);text-shadow:0 0 10px rgba(251,191,36,.5);} 
-    .mono{font-family:'Press Start 2P', monospace;font-size:12px;}
+    .card{border:2px solid var(--amber-dim);background:#0f0f0f;box-shadow:inset 0 0 0 1px rgba(251,191,36,.10);padding:12px;}
+    .title{font-size:18px;color:#d97706;}
+    .big{font-size:60px;color:var(--amber2);text-shadow:0 0 10px rgba(251,191,36,.4);} 
+    .mono{font-family:'VT323',monospace;font-size:16px;}
+#botActivity, #botActivityDetail .mono{font-size:24px;}
     .col-4{grid-column:span 4;} .col-3{grid-column:span 3;} .col-6{grid-column:span 6;} .col-12{grid-column:span 12;}
-    .logs{font-size:16px;max-height:260px;overflow:auto;line-height:1.4;}
+    .logs{font-size:27px;max-height:260px;overflow:auto;line-height:1.5;}
     .logs div{border-bottom:1px solid rgba(251,191,36,.2);padding:6px 0;}
-    .table{width:100%;border-collapse:collapse;font-size:16px;}
+    .table{width:100%;border-collapse:collapse;font-size:18px;}
     .table th{color:#d97706;text-align:left;padding:8px;border-bottom:2px solid #7c2d12;}
     .table td{padding:8px;border-bottom:1px solid rgba(251,191,36,.2);} 
-    .pill{padding:2px 6px;font-size:12px;}
+    .pill{padding:2px 6px;font-size:14px;}
     .controls{display:flex;flex-wrap:wrap;gap:8px;}
-    .btn{background:#1f1f1f;border:2px solid var(--amber-dim);color:var(--amber2);padding:8px 12px;font-size:14px;cursor:pointer;}
+    .btn{background:#1f1f1f;border:2px solid var(--amber-dim);color:var(--amber2);padding:8px 12px;font-size:16px;cursor:pointer;}
     .btn:hover{border-color:var(--amber2);} 
-    .footer{border-top:1px solid var(--amber-dim);padding:8px 12px;font-size:12px;color:#9a3412;display:flex;justify-content:space-between;}
+    .pos-row:hover{background:rgba(251,191,36,.08);} 
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:50;}
+    .modal.open{display:flex;}
+    .modal-card{background:#0f0f0f;border:2px solid var(--amber-dim);padding:16px;min-width:320px;max-width:520px;}
+    .modal-title{font-size:20px;margin-bottom:8px;color:var(--amber2);}
+    .modal-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+    .input{background:#111;border:1px solid var(--amber-dim);color:var(--amber2);padding:8px;width:100%;}
+    .footer{border-top:1px solid var(--amber-dim);padding:8px 12px;font-size:14px;color:#9a3412;display:flex;justify-content:space-between;}
 
     @media (max-width: 900px){
       .col-4,.col-3,.col-6{grid-column:span 12;}
-      .big{font-size:42px;}
-      .status{font-size:14px;}
+      .big{font-size:46px;}
+      .status{font-size:16px;}
       .ticker{font-size:16px;}
     }
   </style>
 </head>
 <body>
-<div class="scanlines"></div>
+<!-- scanlines removed -->
 <div class="wrap">
   <div class="topbar">
     <div class="badge">FROGZRGAY-TRADER 6.9</div>
@@ -88,8 +95,7 @@
       </script>
     </div>
   </div>
-  <div class="ticker"><span id="tickerText"><!-- TICKER_TEXT -->BUY NO Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards? $0.430 (6.40)  •  BUY NO Will the highest temperature in London be 6°C on February 14? $0.226 (12.13)  •  BUY NO Men's Group B - Sweden vs. Slovakia $0.130 (21.08)  •  REDEEM NO Will the highest temperature in Chicago be between 38-39°F on February 11? $0.000 (0.00)  •  REDEEM YES Will the highest temperature in London be 12°C on February 11? $0.000 (0.00)<!-- TICKER_TEXT --></span></div>
-
+<!-- ticker text removed (duplicated with market tape) -->
   <div class="grid">
     <!-- Row 1: Core metrics + Bot Activity (desktop 4 columns) -->
     <div class="card col-3">
@@ -99,12 +105,12 @@
     </div>
     <div class="card col-3">
       <div class="title">DAILY P&L</div>
-      <div class="big" id="pnl"><!-- PNL -->-$16.00<!-- PNL --></div>
+      <div class="big" id="pnl"><!-- PNL -->-$16.70<!-- PNL --></div>
       <div class="mono">TODAY’S RETURN: <!-- RETURN -->--<!-- RETURN --></div>
     </div>
     <div class="card col-3">
       <div class="title">ACTIVE EXPOSURE</div>
-      <div class="big" id="exposure"><!-- EXPOSURE -->$15.07<!-- EXPOSURE --></div>
+      <div class="big" id="exposure"><!-- EXPOSURE -->$15.13<!-- EXPOSURE --></div>
       <div class="mono"><!-- POSITIONS_COUNT -->10<!-- POSITIONS_COUNT --> POSITIONS OPEN</div>
     </div>
     <div class="card col-3">
@@ -124,57 +130,61 @@
     </div>
     <div class="card col-3">
       <div class="title">DRAWDOWN</div>
-      <div class="big" style="font-size:22px;" id="drawdown"><!-- DRAWDOWN -->-77.7%<!-- DRAWDOWN --></div>
+      <div class="big" style="font-size:22px;" id="drawdown"><!-- DRAWDOWN -->-77.4%<!-- DRAWDOWN --></div>
     </div>
     <div class="card col-3">
       <div class="title">AVG TRADE</div>
       <div class="big" style="font-size:22px;" id="avgTrade"><!-- AVG_TRADE -->--<!-- AVG_TRADE --></div>
     </div>
 
-    <!-- Row 3: Controls -->
+    <!-- Row 3: Bot Activity Details -->
     <div class="card col-12">
-      <div class="title">GLOBAL CONTROLS</div>
-      <div class="controls">
-        <button class="btn" onclick="sendAction({type:'pause_all'})">PAUSE ALL BOTS</button>
-        <button class="btn" onclick="sendAction({type:'resume_all'})">RESUME ALL BOTS</button>
-        <button class="btn" onclick="sendAction({type:'close_all'})">CLOSE ALL POSITIONS</button>
-        <button class="btn" onclick="sendAction({type:'close_worst'})">CLOSE WORST LOSERS</button>
-        <button class="btn" onclick="sendAction({type:'scan_now'})">SCAN NOW</button>
+      <div class="title">BOT ACTIVITY — LIVE STATUS</div>
+      <div class="controls" style="margin-bottom:8px;">
+        <button class="btn" onclick="filterBots('all')">ALL</button>
+        <button class="btn" onclick="filterBots('ok')">OK</button>
+        <button class="btn" onclick="filterBots('fail')">FAIL</button>
+        <button class="btn" onclick="filterBots('active')">ACTIVE</button>
       </div>
-      <div class="mono" style="margin-top:8px;" id="actionStatus">READY</div>
-    </div>
-
-    <div class="card col-12">
-      <div class="title">BOT CONTROLS</div>
-      <div id="botControls"><!-- BOT_CONTROLS -->
-      <div class="controls">
-        <div class="card" style="padding:8px;">AUTOTRADER<br>
-          <button class="btn" onclick="sendAction({type:'pause_bot',bot:'autotrader'})">PAUSE</button>
-          <button class="btn" onclick="sendAction({type:'resume_bot',bot:'autotrader'})">RESUME</button>
-          <button class="btn" onclick="sendAction({type:'scan_bot',bot:'autotrader'})">SCAN</button>
-        </div>
-        <div class="card" style="padding:8px;">POSITION MANAGER<br>
-          <button class="btn" onclick="sendAction({type:'pause_bot',bot:'position_manager'})">PAUSE</button>
-          <button class="btn" onclick="sendAction({type:'resume_bot',bot:'position_manager'})">RESUME</button>
-          <button class="btn" onclick="sendAction({type:'scan_bot',bot:'position_manager'})">RUN</button>
-        </div>
-        <div class="card" style="padding:8px;">MEMEBOT<br>
-          <button class="btn" onclick="sendAction({type:'pause_bot',bot:'memebot'})">PAUSE</button>
-          <button class="btn" onclick="sendAction({type:'resume_bot',bot:'memebot'})">RESUME</button>
-          <button class="btn" onclick="sendAction({type:'scan_bot',bot:'memebot'})">SCAN</button>
-        </div>
-        <div class="card" style="padding:8px;">COPYTRADING<br>
-          <button class="btn" onclick="sendAction({type:'pause_bot',bot:'copytrading'})">PAUSE</button>
-          <button class="btn" onclick="sendAction({type:'resume_bot',bot:'copytrading'})">RESUME</button>
-          <button class="btn" onclick="sendAction({type:'scan_bot',bot:'copytrading'})">RUN</button>
-        </div>
-        <div class="card" style="padding:8px;">OPPORTUNITIES<br>
-          <button class="btn" onclick="sendAction({type:'pause_bot',bot:'opportunities'})">PAUSE</button>
-          <button class="btn" onclick="sendAction({type:'resume_bot',bot:'opportunities'})">RESUME</button>
-          <button class="btn" onclick="sendAction({type:'scan_bot',bot:'opportunities'})">SCAN</button>
-        </div>
-      </div>
-    <!-- BOT_CONTROLS --></div>
+      <div id="botActivityDetail"><!-- BOT_ACTIVITY_DETAIL -->
+      <div class="table" style="border:0;">
+        
+          <div class="card" data-bot-status="ok" data-bot-active="true" style="margin-bottom:8px;">
+            <div class="title">AUTOTRADER</div>
+            <div class="mono">STATUS: <span style="color:var(--green);">OK</span> | ACTIVE: YES</div>
+            <div class="mono">LAST TRADE: NO — Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?</div>
+            <div class="mono">LAST TRADE TIME: 2026-02-16T05:52:29.756938+00:00</div>
+          </div>
+        
+          <div class="card" data-bot-status="ok" data-bot-active="true" style="margin-bottom:8px;">
+            <div class="title">POSITION MANAGER</div>
+            <div class="mono">STATUS: <span style="color:var(--green);">OK</span> | ACTIVE: YES</div>
+            <div class="mono">LAST TRADE: NO — Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?</div>
+            <div class="mono">LAST TRADE TIME: 2026-02-16T05:52:29.756938+00:00</div>
+          </div>
+        
+          <div class="card" data-bot-status="ok" data-bot-active="true" style="margin-bottom:8px;">
+            <div class="title">MEMEBOT</div>
+            <div class="mono">STATUS: <span style="color:var(--green);">OK</span> | ACTIVE: YES</div>
+            <div class="mono">LAST TRADE: NO — Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?</div>
+            <div class="mono">LAST TRADE TIME: 2026-02-16T05:52:29.756938+00:00</div>
+          </div>
+        
+          <div class="card" data-bot-status="ok" data-bot-active="true" style="margin-bottom:8px;">
+            <div class="title">COPYTRADING</div>
+            <div class="mono">STATUS: <span style="color:var(--green);">OK</span> | ACTIVE: YES</div>
+            <div class="mono">LAST TRADE: NO — Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?</div>
+            <div class="mono">LAST TRADE TIME: 2026-02-16T05:52:29.756938+00:00</div>
+          </div>
+        
+          <div class="card" data-bot-status="ok" data-bot-active="true" style="margin-bottom:8px;">
+            <div class="title">OPPORTUNITIES</div>
+            <div class="mono">STATUS: <span style="color:var(--green);">OK</span> | ACTIVE: YES</div>
+            <div class="mono">LAST TRADE: NO — Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?</div>
+            <div class="mono">LAST TRADE TIME: 2026-02-16T05:52:29.756938+00:00</div>
+          </div>
+        
+      </div><!-- BOT_ACTIVITY_DETAIL --></div>
     </div>
 
     <!-- Row 4: Positions table + logs at bottom -->
@@ -188,7 +198,7 @@
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="pos-row" data-question="Bitcoin Up or Down - February 10, 5PM ET" data-type="SHORT" data-size="5000" data-pnl="-5" style="cursor:pointer;">
 <td style="font-weight:bold;color:#fbbf24;">Bitcoin Up</td>
 <td><span class="pill" style="background:rgba(239,68,68,.2);color:#ef4444;">SHORT</span></td>
 <td style="text-align:right;">5000</td>
@@ -196,7 +206,7 @@
 <td style="text-align:right;">0</td>
 <td style="text-align:right;color:#ef4444;">-5</td>
 <td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:50%;height:6px;background:#ef4444;"></div></div></td>
-</tr><tr>
+</tr><tr class="pos-row" data-question="Bitcoin Up or Down - February 8, 9AM ET" data-type="LONG" data-size="3080" data-pnl="-3.08" style="cursor:pointer;">
 <td style="font-weight:bold;color:#fbbf24;">Bitcoin Up</td>
 <td><span class="pill" style="background:rgba(239,68,68,.2);color:#ef4444;">LONG</span></td>
 <td style="text-align:right;">3080</td>
@@ -204,7 +214,7 @@
 <td style="text-align:right;">0</td>
 <td style="text-align:right;color:#ef4444;">-3.08</td>
 <td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:30.8%;height:6px;background:#ef4444;"></div></div></td>
-</tr><tr>
+</tr><tr class="pos-row" data-question="Will the Logan Paul 1st Edition Charizard sale price be over 500k?" data-type="SHORT" data-size="250" data-pnl="-2.75" style="cursor:pointer;">
 <td style="font-weight:bold;color:#fbbf24;">Will the L</td>
 <td><span class="pill" style="background:rgba(239,68,68,.2);color:#ef4444;">SHORT</span></td>
 <td style="text-align:right;">250</td>
@@ -212,15 +222,15 @@
 <td style="text-align:right;">0</td>
 <td style="text-align:right;color:#ef4444;">-2.75</td>
 <td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:27.500000000000004%;height:6px;background:#ef4444;"></div></div></td>
-</tr><tr>
+</tr><tr class="pos-row" data-question="Starmer out by June 30, 2026?" data-type="SHORT" data-size="25.5952" data-pnl="7.0416" style="cursor:pointer;">
 <td style="font-weight:bold;color:#fbbf24;">Starmer ou</td>
 <td><span class="pill" style="background:rgba(34,197,94,.2);color:#22c55e;">SHORT</span></td>
 <td style="text-align:right;">25.5952</td>
 <td style="text-align:right;">0.21488013377508286</td>
 <td style="text-align:right;">0</td>
-<td style="text-align:right;color:#22c55e;">+6.9136</td>
-<td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:69.136%;height:6px;background:#22c55e;"></div></div></td>
-</tr><tr>
+<td style="text-align:right;color:#22c55e;">+7.0416</td>
+<td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:70.416%;height:6px;background:#22c55e;"></div></div></td>
+</tr><tr class="pos-row" data-question="Men's Group B - Sweden vs. Slovakia" data-type="SHORT" data-size="21.0769" data-pnl="-2.7399" style="cursor:pointer;">
 <td style="font-weight:bold;color:#fbbf24;">Men's Grou</td>
 <td><span class="pill" style="background:rgba(239,68,68,.2);color:#ef4444;">SHORT</span></td>
 <td style="text-align:right;">21.0769</td>
@@ -228,7 +238,7 @@
 <td style="text-align:right;">0</td>
 <td style="text-align:right;color:#ef4444;">-2.7399</td>
 <td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:27.399%;height:6px;background:#ef4444;"></div></div></td>
-</tr><tr>
+</tr><tr class="pos-row" data-question="Ethereum Up or Down - February 10, 3PM ET" data-type="LONG" data-size="17" data-pnl="-3.23" style="cursor:pointer;">
 <td style="font-weight:bold;color:#fbbf24;">Ethereum U</td>
 <td><span class="pill" style="background:rgba(239,68,68,.2);color:#ef4444;">LONG</span></td>
 <td style="text-align:right;">17</td>
@@ -236,7 +246,7 @@
 <td style="text-align:right;">0</td>
 <td style="text-align:right;color:#ef4444;">-3.23</td>
 <td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:32.300000000000004%;height:6px;background:#ef4444;"></div></div></td>
-</tr><tr>
+</tr><tr class="pos-row" data-question="Bitcoin Up or Down - February 13, 4PM ET" data-type="SHORT" data-size="15.1818" data-pnl="-1.6699" style="cursor:pointer;">
 <td style="font-weight:bold;color:#fbbf24;">Bitcoin Up</td>
 <td><span class="pill" style="background:rgba(239,68,68,.2);color:#ef4444;">SHORT</span></td>
 <td style="text-align:right;">15.1818</td>
@@ -244,7 +254,7 @@
 <td style="text-align:right;">0</td>
 <td style="text-align:right;color:#ef4444;">-1.6699</td>
 <td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:16.699%;height:6px;background:#ef4444;"></div></div></td>
-</tr><tr>
+</tr><tr class="pos-row" data-question="Will the highest temperature in London be 6°C on February 14?" data-type="SHORT" data-size="12.1262" data-pnl="-2.7399" style="cursor:pointer;">
 <td style="font-weight:bold;color:#fbbf24;">Will the h</td>
 <td><span class="pill" style="background:rgba(239,68,68,.2);color:#ef4444;">SHORT</span></td>
 <td style="text-align:right;">12.1262</td>
@@ -252,7 +262,7 @@
 <td style="text-align:right;">0</td>
 <td style="text-align:right;color:#ef4444;">-2.7399</td>
 <td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:27.399%;height:6px;background:#ef4444;"></div></div></td>
-</tr><tr>
+</tr><tr class="pos-row" data-question="Will the price of Bitcoin be above $70,000 on February 11?" data-type="LONG" data-size="8.789" data-pnl="-2.7499" style="cursor:pointer;">
 <td style="font-weight:bold;color:#fbbf24;">Will the p</td>
 <td><span class="pill" style="background:rgba(239,68,68,.2);color:#ef4444;">LONG</span></td>
 <td style="text-align:right;">8.789</td>
@@ -260,20 +270,20 @@
 <td style="text-align:right;">0</td>
 <td style="text-align:right;color:#ef4444;">-2.7499</td>
 <td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:27.498999999999995%;height:6px;background:#ef4444;"></div></div></td>
-</tr><tr>
+</tr><tr class="pos-row" data-question="Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?" data-type="SHORT" data-size="6.3953" data-pnl="-0.1598" style="cursor:pointer;">
 <td style="font-weight:bold;color:#fbbf24;">Will All t</td>
 <td><span class="pill" style="background:rgba(239,68,68,.2);color:#ef4444;">SHORT</span></td>
 <td style="text-align:right;">6.3953</td>
 <td style="text-align:right;">0.4299876471783966</td>
 <td style="text-align:right;">0</td>
-<td style="text-align:right;color:#ef4444;">-0.0959</td>
-<td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:0.959%;height:6px;background:#ef4444;"></div></div></td>
+<td style="text-align:right;color:#ef4444;">-0.1598</td>
+<td style="text-align:center;"><div style="width:100%;height:6px;background:rgba(251,191,36,.2);"><div style="width:1.598%;height:6px;background:#ef4444;"></div></div></td>
 </tr>
 </tbody></table><!-- POSITIONS_TABLE --></div>
     </div>
 
     <div class="card col-12">
-      <div class="title">SYSTEM LOGS</div>
+      <div class="title">MEMEBOT SYSTEM LOG</div>
       <div class="logs" id="logs"><!-- LOGS -->[05:52:29] BUY NO Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?
 [13:51:34] BUY NO Will the highest temperature in London be 6°C on February 14?
 [13:11:32] BUY NO Men's Group B - Sweden vs. Slovakia
@@ -288,18 +298,82 @@
   </div>
 </div>
 
+<div class="modal" id="posModal">
+  <div class="modal-card">
+    <div class="modal-title">POSITION ACTION</div>
+    <div class="mono" id="posModalTitle">--</div>
+    <div class="mono" id="posModalMeta" style="margin:6px 0 10px 0;">--</div>
+    <div class="modal-actions">
+      <button class="btn" onclick="setPosAction('close')">CLOSE</button>
+      <button class="btn" onclick="setPosAction('reduce')">REDUCE</button>
+      <button class="btn" onclick="setPosAction('flip')">FLIP</button>
+      <button class="btn" onclick="setPosAction('tp_sl')">SET TP/SL</button>
+    </div>
+    <div style="margin-top:10px;">
+      <input class="input" id="posActionInput" placeholder="Amount / TP / SL (optional)" />
+    </div>
+    <div class="modal-actions" style="margin-top:10px;">
+      <button class="btn" onclick="confirmPosAction()">CONFIRM</button>
+      <button class="btn" onclick="closePosModal()">CANCEL</button>
+    </div>
+  </div>
+</div>
+
 <script>
-  window.TICKER_DATA = {"balanceUsd":"$0.00","exposureUsd":"$15.07","positionsCount":10,"totalPnlUsd":"-$16.00","lastTrades":[{"side":"BUY NO","symbol":"Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?","price":"$0.430","size":"6.40"},{"side":"BUY NO","symbol":"Will the highest temperature in London be 6°C on February 14?","price":"$0.226","size":"12.13"},{"side":"BUY NO","symbol":"Men's Group B - Sweden vs. Slovakia","price":"$0.130","size":"21.08"},{"side":"REDEEM NO","symbol":"Will the highest temperature in Chicago be between 38-39°F on February 11?","price":"$0.000","size":"0.00"},{"side":"REDEEM YES","symbol":"Will the highest temperature in London be 12°C on February 11?","price":"$0.000","size":"0.00"}],"tickerText":"BUY NO Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards? $0.430 (6.40)  •  BUY NO Will the highest temperature in London be 6°C on February 14? $0.226 (12.13)  •  BUY NO Men's Group B - Sweden vs. Slovakia $0.130 (21.08)  •  REDEEM NO Will the highest temperature in Chicago be between 38-39°F on February 11? $0.000 (0.00)  •  REDEEM YES Will the highest temperature in London be 12°C on February 11? $0.000 (0.00)","cash":"$0.00","margin":"--","returnPct":"--","accountStatus":"ACTIVE","latency":"24ms","botPerf":"Copytrading PnL: -$6.67 | Opportunities PnL: -$10.47 | Memebot: total 39, closed 4 (TP 2/SL 2), open 35, unroutable 1","winRate":"10.0%","profitFactor":"0.29","drawdown":"-77.7%","avgTrade":"--","positionsList":"Bitcoin Up or Down - February 10, 5PM ET | YES 0 / NO 5000 | cost 5 | pnl -5\nBitcoin Up or Down - February 8, 9AM ET | YES 3080 / NO 0 | cost 3.08 | pnl -3.08\nWill the Logan Paul 1st Edition Charizard sale price be over 500k? | YES 0 / NO 250 | cost 2.75 | pnl -2.75\nStarmer out by June 30, 2026? | YES 0 / NO 25.5952 | cost 5.4999 | pnl 6.9136\nMen's Group B - Sweden vs. Slovakia | YES 0 / NO 21.0769 | cost 2.7399 | pnl -2.7399\nEthereum Up or Down - February 10, 3PM ET | YES 17 / NO 0 | cost 3.23 | pnl -3.23\nBitcoin Up or Down - February 13, 4PM ET | YES 0 / NO 15.1818 | cost 1.6699 | pnl -1.6699\nWill the highest temperature in London be 6°C on February 14? | YES 0 / NO 12.1262 | cost 2.7399 | pnl -2.7399\nWill the price of Bitcoin be above $70,000 on February 11? | YES 8.789 / NO 0 | cost 2.7499 | pnl -2.7499\nWill All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards? | YES 0 / NO 6.3953 | cost 2.7499 | pnl -0.0959","positionsTable":"\n<table class=\"table\">\n<thead>\n<tr>\n<th>Sym</th><th>Type</th><th style=\"text-align:right;\">Size</th><th style=\"text-align:right;\">Entry</th><th style=\"text-align:right;\">Mark</th><th style=\"text-align:right;\">P&L</th><th style=\"text-align:center;\">Status</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"font-weight:bold;color:#fbbf24;\">Bitcoin Up</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">5000</td>\n<td style=\"text-align:right;\">0.001</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-5</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:50%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr>\n<td style=\"font-weight:bold;color:#fbbf24;\">Bitcoin Up</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">LONG</span></td>\n<td style=\"text-align:right;\">3080</td>\n<td style=\"text-align:right;\">0.001</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-3.08</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:30.8%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr>\n<td style=\"font-weight:bold;color:#fbbf24;\">Will the L</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">250</td>\n<td style=\"text-align:right;\">0.011</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-2.75</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:27.500000000000004%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr>\n<td style=\"font-weight:bold;color:#fbbf24;\">Starmer ou</td>\n<td><span class=\"pill\" style=\"background:rgba(34,197,94,.2);color:#22c55e;\">SHORT</span></td>\n<td style=\"text-align:right;\">25.5952</td>\n<td style=\"text-align:right;\">0.21488013377508286</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#22c55e;\">+6.9136</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:69.136%;height:6px;background:#22c55e;\"></div></div></td>\n</tr><tr>\n<td style=\"font-weight:bold;color:#fbbf24;\">Men's Grou</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">21.0769</td>\n<td style=\"text-align:right;\">0.1299953978051801</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-2.7399</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:27.399%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr>\n<td style=\"font-weight:bold;color:#fbbf24;\">Ethereum U</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">LONG</span></td>\n<td style=\"text-align:right;\">17</td>\n<td style=\"text-align:right;\">0.19</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-3.23</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:32.300000000000004%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr>\n<td style=\"font-weight:bold;color:#fbbf24;\">Bitcoin Up</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">15.1818</td>\n<td style=\"text-align:right;\">0.10999354490244898</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-1.6699</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:16.699%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr>\n<td style=\"font-weight:bold;color:#fbbf24;\">Will the h</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">12.1262</td>\n<td style=\"text-align:right;\">0.22594877208028893</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-2.7399</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:27.399%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr>\n<td style=\"font-weight:bold;color:#fbbf24;\">Will the p</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">LONG</span></td>\n<td style=\"text-align:right;\">8.789</td>\n<td style=\"text-align:right;\">0.31287973603367847</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-2.7499</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:27.498999999999995%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr>\n<td style=\"font-weight:bold;color:#fbbf24;\">Will All t</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">6.3953</td>\n<td style=\"text-align:right;\">0.4299876471783966</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-0.0959</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:0.959%;height:6px;background:#ef4444;\"></div></div></td>\n</tr>\n</tbody></table>","tradesList":"BUY NO | Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards? | cost 2.75 | shares 6.3953 | 2026-02-16T05:52:29.756938+00:00\nBUY NO | Will the highest temperature in London be 6°C on February 14? | cost 2.73930858 | shares 12.1262 | 2026-02-14T13:51:34.974756+00:00\nBUY NO | Men's Group B - Sweden vs. Slovakia | cost 2.7378893099999995 | shares 21.0769 | 2026-02-14T13:11:32.690464+00:00\nREDEEM NO | Will the highest temperature in Chicago be between 38-39°F on February 11? | cost  | shares  | 2026-02-14T12:57:48.164989+00:00\nREDEEM YES | Will the highest temperature in London be 12°C on February 11? | cost  | shares  | 2026-02-14T12:57:41.607048+00:00","logsList":"[05:52:29] BUY NO Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?\n[13:51:34] BUY NO Will the highest temperature in London be 6°C on February 14?\n[13:11:32] BUY NO Men's Group B - Sweden vs. Slovakia\n[12:57:48] REDEEM NO Will the highest temperature in Chicago be between 38-39°F on February 11?\n[12:57:41] REDEEM YES Will the highest temperature in London be 12°C on February 11?","botControlsHtml":"\n      <div class=\"controls\">\n        <div class=\"card\" style=\"padding:8px;\">AUTOTRADER<br>\n          <button class=\"btn\" onclick=\"sendAction({type:'pause_bot',bot:'autotrader'})\">PAUSE</button>\n          <button class=\"btn\" onclick=\"sendAction({type:'resume_bot',bot:'autotrader'})\">RESUME</button>\n          <button class=\"btn\" onclick=\"sendAction({type:'scan_bot',bot:'autotrader'})\">SCAN</button>\n        </div>\n        <div class=\"card\" style=\"padding:8px;\">POSITION MANAGER<br>\n          <button class=\"btn\" onclick=\"sendAction({type:'pause_bot',bot:'position_manager'})\">PAUSE</button>\n          <button class=\"btn\" onclick=\"sendAction({type:'resume_bot',bot:'position_manager'})\">RESUME</button>\n          <button class=\"btn\" onclick=\"sendAction({type:'scan_bot',bot:'position_manager'})\">RUN</button>\n        </div>\n        <div class=\"card\" style=\"padding:8px;\">MEMEBOT<br>\n          <button class=\"btn\" onclick=\"sendAction({type:'pause_bot',bot:'memebot'})\">PAUSE</button>\n          <button class=\"btn\" onclick=\"sendAction({type:'resume_bot',bot:'memebot'})\">RESUME</button>\n          <button class=\"btn\" onclick=\"sendAction({type:'scan_bot',bot:'memebot'})\">SCAN</button>\n        </div>\n        <div class=\"card\" style=\"padding:8px;\">COPYTRADING<br>\n          <button class=\"btn\" onclick=\"sendAction({type:'pause_bot',bot:'copytrading'})\">PAUSE</button>\n          <button class=\"btn\" onclick=\"sendAction({type:'resume_bot',bot:'copytrading'})\">RESUME</button>\n          <button class=\"btn\" onclick=\"sendAction({type:'scan_bot',bot:'copytrading'})\">RUN</button>\n        </div>\n        <div class=\"card\" style=\"padding:8px;\">OPPORTUNITIES<br>\n          <button class=\"btn\" onclick=\"sendAction({type:'pause_bot',bot:'opportunities'})\">PAUSE</button>\n          <button class=\"btn\" onclick=\"sendAction({type:'resume_bot',bot:'opportunities'})\">RESUME</button>\n          <button class=\"btn\" onclick=\"sendAction({type:'scan_bot',bot:'opportunities'})\">SCAN</button>\n        </div>\n      </div>\n    ","botActivityText":"AUTOTRADER: OK • COPY: OK • OPP: OK • MEME: OK • PM: OK","updatedAt":"2/16/2026, 4:00:30 PM ET"};
+  window.TICKER_DATA = {"balanceUsd":"$0.00","exposureUsd":"$15.13","positionsCount":10,"totalPnlUsd":"-$16.70","lastTrades":[{"side":"BUY NO","symbol":"Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?","price":"$0.430","size":"6.40"},{"side":"BUY NO","symbol":"Will the highest temperature in London be 6°C on February 14?","price":"$0.226","size":"12.13"},{"side":"BUY NO","symbol":"Men's Group B - Sweden vs. Slovakia","price":"$0.130","size":"21.08"},{"side":"REDEEM NO","symbol":"Will the highest temperature in Chicago be between 38-39°F on February 11?","price":"$0.000","size":"0.00"},{"side":"REDEEM YES","symbol":"Will the highest temperature in London be 12°C on February 11?","price":"$0.000","size":"0.00"}],"tickerText":"BUY NO Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards? $0.430 (6.40)  •  BUY NO Will the highest temperature in London be 6°C on February 14? $0.226 (12.13)  •  BUY NO Men's Group B - Sweden vs. Slovakia $0.130 (21.08)  •  REDEEM NO Will the highest temperature in Chicago be between 38-39°F on February 11? $0.000 (0.00)  •  REDEEM YES Will the highest temperature in London be 12°C on February 11? $0.000 (0.00)","cash":"$0.00","margin":"--","returnPct":"--","accountStatus":"ACTIVE","latency":"24ms","botPerf":"Copytrading PnL: -$6.67 | Opportunities PnL: -$10.41 | Memebot: total 39, closed 4 (TP 2/SL 2), open 35, unroutable 1","winRate":"10.0%","profitFactor":"0.29","drawdown":"-77.4%","avgTrade":"--","positionsList":"Bitcoin Up or Down - February 10, 5PM ET | YES 0 / NO 5000 | cost 5 | pnl -5\nBitcoin Up or Down - February 8, 9AM ET | YES 3080 / NO 0 | cost 3.08 | pnl -3.08\nWill the Logan Paul 1st Edition Charizard sale price be over 500k? | YES 0 / NO 250 | cost 2.75 | pnl -2.75\nStarmer out by June 30, 2026? | YES 0 / NO 25.5952 | cost 5.4999 | pnl 7.0416\nMen's Group B - Sweden vs. Slovakia | YES 0 / NO 21.0769 | cost 2.7399 | pnl -2.7399\nEthereum Up or Down - February 10, 3PM ET | YES 17 / NO 0 | cost 3.23 | pnl -3.23\nBitcoin Up or Down - February 13, 4PM ET | YES 0 / NO 15.1818 | cost 1.6699 | pnl -1.6699\nWill the highest temperature in London be 6°C on February 14? | YES 0 / NO 12.1262 | cost 2.7399 | pnl -2.7399\nWill the price of Bitcoin be above $70,000 on February 11? | YES 8.789 / NO 0 | cost 2.7499 | pnl -2.7499\nWill All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards? | YES 0 / NO 6.3953 | cost 2.7499 | pnl -0.1598","positionsTable":"\n<table class=\"table\">\n<thead>\n<tr>\n<th>Sym</th><th>Type</th><th style=\"text-align:right;\">Size</th><th style=\"text-align:right;\">Entry</th><th style=\"text-align:right;\">Mark</th><th style=\"text-align:right;\">P&L</th><th style=\"text-align:center;\">Status</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"pos-row\" data-question=\"Bitcoin Up or Down - February 10, 5PM ET\" data-type=\"SHORT\" data-size=\"5000\" data-pnl=\"-5\" style=\"cursor:pointer;\">\n<td style=\"font-weight:bold;color:#fbbf24;\">Bitcoin Up</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">5000</td>\n<td style=\"text-align:right;\">0.001</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-5</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:50%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr class=\"pos-row\" data-question=\"Bitcoin Up or Down - February 8, 9AM ET\" data-type=\"LONG\" data-size=\"3080\" data-pnl=\"-3.08\" style=\"cursor:pointer;\">\n<td style=\"font-weight:bold;color:#fbbf24;\">Bitcoin Up</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">LONG</span></td>\n<td style=\"text-align:right;\">3080</td>\n<td style=\"text-align:right;\">0.001</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-3.08</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:30.8%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr class=\"pos-row\" data-question=\"Will the Logan Paul 1st Edition Charizard sale price be over 500k?\" data-type=\"SHORT\" data-size=\"250\" data-pnl=\"-2.75\" style=\"cursor:pointer;\">\n<td style=\"font-weight:bold;color:#fbbf24;\">Will the L</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">250</td>\n<td style=\"text-align:right;\">0.011</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-2.75</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:27.500000000000004%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr class=\"pos-row\" data-question=\"Starmer out by June 30, 2026?\" data-type=\"SHORT\" data-size=\"25.5952\" data-pnl=\"7.0416\" style=\"cursor:pointer;\">\n<td style=\"font-weight:bold;color:#fbbf24;\">Starmer ou</td>\n<td><span class=\"pill\" style=\"background:rgba(34,197,94,.2);color:#22c55e;\">SHORT</span></td>\n<td style=\"text-align:right;\">25.5952</td>\n<td style=\"text-align:right;\">0.21488013377508286</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#22c55e;\">+7.0416</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:70.416%;height:6px;background:#22c55e;\"></div></div></td>\n</tr><tr class=\"pos-row\" data-question=\"Men's Group B - Sweden vs. Slovakia\" data-type=\"SHORT\" data-size=\"21.0769\" data-pnl=\"-2.7399\" style=\"cursor:pointer;\">\n<td style=\"font-weight:bold;color:#fbbf24;\">Men's Grou</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">21.0769</td>\n<td style=\"text-align:right;\">0.1299953978051801</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-2.7399</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:27.399%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr class=\"pos-row\" data-question=\"Ethereum Up or Down - February 10, 3PM ET\" data-type=\"LONG\" data-size=\"17\" data-pnl=\"-3.23\" style=\"cursor:pointer;\">\n<td style=\"font-weight:bold;color:#fbbf24;\">Ethereum U</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">LONG</span></td>\n<td style=\"text-align:right;\">17</td>\n<td style=\"text-align:right;\">0.19</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-3.23</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:32.300000000000004%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr class=\"pos-row\" data-question=\"Bitcoin Up or Down - February 13, 4PM ET\" data-type=\"SHORT\" data-size=\"15.1818\" data-pnl=\"-1.6699\" style=\"cursor:pointer;\">\n<td style=\"font-weight:bold;color:#fbbf24;\">Bitcoin Up</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">15.1818</td>\n<td style=\"text-align:right;\">0.10999354490244898</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-1.6699</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:16.699%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr class=\"pos-row\" data-question=\"Will the highest temperature in London be 6°C on February 14?\" data-type=\"SHORT\" data-size=\"12.1262\" data-pnl=\"-2.7399\" style=\"cursor:pointer;\">\n<td style=\"font-weight:bold;color:#fbbf24;\">Will the h</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">12.1262</td>\n<td style=\"text-align:right;\">0.22594877208028893</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-2.7399</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:27.399%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr class=\"pos-row\" data-question=\"Will the price of Bitcoin be above $70,000 on February 11?\" data-type=\"LONG\" data-size=\"8.789\" data-pnl=\"-2.7499\" style=\"cursor:pointer;\">\n<td style=\"font-weight:bold;color:#fbbf24;\">Will the p</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">LONG</span></td>\n<td style=\"text-align:right;\">8.789</td>\n<td style=\"text-align:right;\">0.31287973603367847</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-2.7499</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:27.498999999999995%;height:6px;background:#ef4444;\"></div></div></td>\n</tr><tr class=\"pos-row\" data-question=\"Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?\" data-type=\"SHORT\" data-size=\"6.3953\" data-pnl=\"-0.1598\" style=\"cursor:pointer;\">\n<td style=\"font-weight:bold;color:#fbbf24;\">Will All t</td>\n<td><span class=\"pill\" style=\"background:rgba(239,68,68,.2);color:#ef4444;\">SHORT</span></td>\n<td style=\"text-align:right;\">6.3953</td>\n<td style=\"text-align:right;\">0.4299876471783966</td>\n<td style=\"text-align:right;\">0</td>\n<td style=\"text-align:right;color:#ef4444;\">-0.1598</td>\n<td style=\"text-align:center;\"><div style=\"width:100%;height:6px;background:rgba(251,191,36,.2);\"><div style=\"width:1.598%;height:6px;background:#ef4444;\"></div></div></td>\n</tr>\n</tbody></table>","tradesList":"BUY NO | Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards? | cost 2.75 | shares 6.3953 | 2026-02-16T05:52:29.756938+00:00\nBUY NO | Will the highest temperature in London be 6°C on February 14? | cost 2.73930858 | shares 12.1262 | 2026-02-14T13:51:34.974756+00:00\nBUY NO | Men's Group B - Sweden vs. Slovakia | cost 2.7378893099999995 | shares 21.0769 | 2026-02-14T13:11:32.690464+00:00\nREDEEM NO | Will the highest temperature in Chicago be between 38-39°F on February 11? | cost  | shares  | 2026-02-14T12:57:48.164989+00:00\nREDEEM YES | Will the highest temperature in London be 12°C on February 11? | cost  | shares  | 2026-02-14T12:57:41.607048+00:00","logsList":"[05:52:29] BUY NO Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?\n[13:51:34] BUY NO Will the highest temperature in London be 6°C on February 14?\n[13:11:32] BUY NO Men's Group B - Sweden vs. Slovakia\n[12:57:48] REDEEM NO Will the highest temperature in Chicago be between 38-39°F on February 11?\n[12:57:41] REDEEM YES Will the highest temperature in London be 12°C on February 11?","botActivityText":"AUTOTRADER: OK • COPY: OK • OPP: OK • MEME: OK • PM: OK","botActivityDetailHtml":"\n      <div class=\"table\" style=\"border:0;\">\n        \n          <div class=\"card\" data-bot-status=\"ok\" data-bot-active=\"true\" style=\"margin-bottom:8px;\">\n            <div class=\"title\">AUTOTRADER</div>\n            <div class=\"mono\">STATUS: <span style=\"color:var(--green);\">OK</span> | ACTIVE: YES</div>\n            <div class=\"mono\">LAST TRADE: NO — Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?</div>\n            <div class=\"mono\">LAST TRADE TIME: 2026-02-16T05:52:29.756938+00:00</div>\n          </div>\n        \n          <div class=\"card\" data-bot-status=\"ok\" data-bot-active=\"true\" style=\"margin-bottom:8px;\">\n            <div class=\"title\">POSITION MANAGER</div>\n            <div class=\"mono\">STATUS: <span style=\"color:var(--green);\">OK</span> | ACTIVE: YES</div>\n            <div class=\"mono\">LAST TRADE: NO — Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?</div>\n            <div class=\"mono\">LAST TRADE TIME: 2026-02-16T05:52:29.756938+00:00</div>\n          </div>\n        \n          <div class=\"card\" data-bot-status=\"ok\" data-bot-active=\"true\" style=\"margin-bottom:8px;\">\n            <div class=\"title\">MEMEBOT</div>\n            <div class=\"mono\">STATUS: <span style=\"color:var(--green);\">OK</span> | ACTIVE: YES</div>\n            <div class=\"mono\">LAST TRADE: NO — Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?</div>\n            <div class=\"mono\">LAST TRADE TIME: 2026-02-16T05:52:29.756938+00:00</div>\n          </div>\n        \n          <div class=\"card\" data-bot-status=\"ok\" data-bot-active=\"true\" style=\"margin-bottom:8px;\">\n            <div class=\"title\">COPYTRADING</div>\n            <div class=\"mono\">STATUS: <span style=\"color:var(--green);\">OK</span> | ACTIVE: YES</div>\n            <div class=\"mono\">LAST TRADE: NO — Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?</div>\n            <div class=\"mono\">LAST TRADE TIME: 2026-02-16T05:52:29.756938+00:00</div>\n          </div>\n        \n          <div class=\"card\" data-bot-status=\"ok\" data-bot-active=\"true\" style=\"margin-bottom:8px;\">\n            <div class=\"title\">OPPORTUNITIES</div>\n            <div class=\"mono\">STATUS: <span style=\"color:var(--green);\">OK</span> | ACTIVE: YES</div>\n            <div class=\"mono\">LAST TRADE: NO — Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?</div>\n            <div class=\"mono\">LAST TRADE TIME: 2026-02-16T05:52:29.756938+00:00</div>\n          </div>\n        \n      </div>","updatedAt":"2/16/2026, 6:01:19 PM ET"};
+  let currentPos = null;
+  let currentAction = 'close';
+
   async function sendAction(payload){
     try{
       const res = await fetch('/actions', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)});
       let out;
       try { out = await res.json(); }
       catch { out = { ok:false, error: await res.text() }; }
-      document.getElementById('actionStatus').textContent = out.ok ? 'ACTION QUEUED' : ('ERROR: '+(out.error||'unknown'));
+      console.log('action', out);
     }catch(e){
-      document.getElementById('actionStatus').textContent = 'ERROR: '+e.message;
+      console.error('action error', e);
     }
+  }
+
+  function filterBots(mode){
+    document.querySelectorAll('[data-bot-status]').forEach(el=>{
+      const s = el.getAttribute('data-bot-status');
+      const active = el.getAttribute('data-bot-active');
+      if (mode==='all') el.style.display='block';
+      else if (mode==='ok') el.style.display = s==='ok' ? 'block':'none';
+      else if (mode==='fail') el.style.display = s==='fail' ? 'block':'none';
+      else if (mode==='active') el.style.display = active==='true' ? 'block':'none';
+    });
+  }
+
+  function bindPositionClicks(){
+    document.querySelectorAll('.pos-row').forEach(el=>{
+      el.onclick = () => {
+        currentPos = {
+          question: el.getAttribute('data-question') || 'UNKNOWN',
+          type: el.getAttribute('data-type') || '--',
+          size: el.getAttribute('data-size') || '--',
+          pnl: el.getAttribute('data-pnl') || '--'
+        };
+        document.getElementById('posModalTitle').textContent = currentPos.question;
+        document.getElementById('posModalMeta').textContent = `TYPE: ${currentPos.type} | SIZE: ${currentPos.size} | PNL: ${currentPos.pnl}`;
+        document.getElementById('posModal').classList.add('open');
+      };
+    });
+  }
+
+  function closePosModal(){
+    document.getElementById('posModal').classList.remove('open');
+  }
+  function setPosAction(a){
+    currentAction = a;
+  }
+  async function confirmPosAction(){
+    if (!currentPos) return;
+    const note = document.getElementById('posActionInput').value || '';
+    await sendAction({type:'position_action', action: currentAction, position: currentPos, note});
+    closePosModal();
   }
 
   function render(data){
@@ -330,6 +404,7 @@
     document.getElementById('logs').textContent = data.logsList || '';
     document.getElementById('botActivityTime').textContent = data.updatedAt || '--';
     document.getElementById('time').textContent = `TIME: ${new Date().toLocaleTimeString('en-US')}`;
+    bindPositionClicks();
   }
   render(window.TICKER_DATA || {});
 </script>
