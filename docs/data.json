@@ -1,39 +1,39 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$16.12",
+  "exposureUsd": "$4.70",
   "positionsCount": 2,
-  "totalPnlUsd": "-$0.08",
+  "totalPnlUsd": "-$0.28",
   "lastTrades": [
+    {
+      "side": "BUY YES",
+      "symbol": "Will the Iranian regime fall by June 30?",
+      "price": "$0.385",
+      "size": "0.00"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Will the Iranian regime fall by March 31?",
+      "price": "$0.147",
+      "size": "0.00"
+    },
+    {
+      "side": "SELL NO",
+      "symbol": "Will All the Empty Rooms win Best Documentary Short Film at the 98th Academy Awards?",
+      "price": "$0.410",
+      "size": "0.00"
+    },
+    {
+      "side": "SELL NO",
+      "symbol": "Starmer out by June 30, 2026?",
+      "price": "$0.500",
+      "size": "0.00"
+    },
     {
       "side": "REDEEM YES",
       "symbol": "Khamenei out as Supreme Leader of Iran by March 31?",
       "price": "$1.000",
       "size": "0.00"
-    },
-    {
-      "side": "SELL YES",
-      "symbol": "Khamenei out as Supreme Leader of Iran by March 31?",
-      "price": "$0.000",
-      "size": "16.67"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Khamenei out as Supreme Leader of Iran by March 31?",
-      "price": "$0.180",
-      "size": "16.67"
-    },
-    {
-      "side": "BUY NO",
-      "symbol": "Will the highest temperature in Chicago be between 38-39°F on February 11?",
-      "price": "$0.600",
-      "size": "5.42"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will the highest temperature in London be 12°C on February 11?",
-      "price": "$0.520",
-      "size": "5.54"
     }
   ],
-  "updatedAt": "3/5/2026, 1:25:46 PM ET"
+  "updatedAt": "3/5/2026, 2:43:24 PM ET"
 }
