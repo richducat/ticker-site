@@ -1,15 +1,25 @@
 import fs from 'fs';
 import path from 'path';
 
-const credsPath = '/Users/RichardDucat_1/.config/simmer/credentials.json';
-const apiBase = 'https://api.simmer.markets';
+const apiBase = process.env.SIMMER_API_BASE || 'https://api.simmer.markets';
+const credsPath = process.env.SIMMER_CREDS_PATH || '/Users/RichardDucat_1/.config/simmer/credentials.json';
 
-const creds = JSON.parse(fs.readFileSync(credsPath, 'utf8'));
-const apiKey = creds.api_key;
+function resolveApiKey() {
+  if (process.env.SIMMER_API_KEY) return process.env.SIMMER_API_KEY;
+
+  if (fs.existsSync(credsPath)) {
+    const creds = JSON.parse(fs.readFileSync(credsPath, 'utf8'));
+    if (creds?.api_key) return creds.api_key;
+  }
+
+  throw new Error('Missing SIMMER_API_KEY. Set env var or provide SIMMER_CREDS_PATH to credentials.json');
+}
+
+const apiKey = resolveApiKey();
 
 async function getJson(url) {
   const res = await fetch(url, {
-    headers: { 'Authorization': `Bearer ${apiKey}` }
+    headers: { Authorization: `Bearer ${apiKey}` }
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} ${url}`);
   return res.json();
@@ -39,10 +49,10 @@ function fmtUsd(n) {
 
   const data = {
     balanceUsd: fmtUsd(balanceRaw),
-    exposureUsd: fmtUsd((Number(exposureRaw)||0) ? exposureRaw : fallbackExposure),
+    exposureUsd: fmtUsd((Number(exposureRaw) || 0) ? exposureRaw : fallbackExposure),
     positionsCount: positionsArr.length || (positions?.count ?? 0),
-    totalPnlUsd: fmtUsd((Number(pnlRaw)||0) ? pnlRaw : fallbackPnl),
-    lastTrades: tradesArr.slice(0,5).map(t => ({
+    totalPnlUsd: fmtUsd((Number(pnlRaw) || 0) ? pnlRaw : fallbackPnl),
+    lastTrades: tradesArr.slice(0, 5).map(t => ({
       side: (t.action ? t.action.toUpperCase() : '') + (t.side ? ` ${t.side.toUpperCase()}` : '') || 'TRADE',
       symbol: t.market_question || t.question || t.symbol || t.market || t.asset || 'UNKNOWN',
       price: t.price_before != null ? `$${Number(t.price_before).toFixed(3)}` : (t.price != null ? `$${Number(t.price).toFixed(3)}` : '--'),
@@ -60,7 +70,7 @@ function fmtUsd(n) {
   const indexPath = path.resolve('docs/index.html');
   let indexHtml = fs.readFileSync(indexPath, 'utf8');
   indexHtml = indexHtml.replace(
-    /\/\/ __TICKER_DATA__\n/, 
+    /\/\/ __TICKER_DATA__\n/,
     `window.TICKER_DATA = ${JSON.stringify(data)};\n`
   );
 
