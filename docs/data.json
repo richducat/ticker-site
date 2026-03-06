@@ -5,6 +5,12 @@
   "totalPnlUsd": "-$0.01",
   "lastTrades": [
     {
+      "side": "BUY NO",
+      "symbol": "US x Iran ceasefire by March 15?",
+      "price": "$0.895",
+      "size": "0.00"
+    },
+    {
       "side": "BUY YES",
       "symbol": "Will the Iranian regime fall by June 30?",
       "price": "$0.385",
@@ -27,13 +33,7 @@
       "symbol": "Starmer out by June 30, 2026?",
       "price": "$0.500",
       "size": "0.00"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "Khamenei out as Supreme Leader of Iran by March 31?",
-      "price": "$1.000",
-      "size": "0.00"
     }
   ],
-  "updatedAt": "3/6/2026, 11:01:20 AM ET"
+  "updatedAt": "3/6/2026, 12:06:35 PM ET"
 }
