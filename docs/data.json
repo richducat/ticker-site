@@ -1,9 +1,15 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$15.60",
-  "positionsCount": 3,
-  "totalPnlUsd": "-$9.62",
+  "exposureUsd": "$4.01",
+  "positionsCount": 2,
+  "totalPnlUsd": "-$9.53",
   "lastTrades": [
+    {
+      "side": "REDEEM YES",
+      "symbol": "Bitcoin Up or Down - March 8, 1:55AM-3:00AM ET",
+      "price": "$1.000",
+      "size": "11.58"
+    },
     {
       "side": "SELL NO",
       "symbol": "Starmer out by June 30, 2026?",
@@ -27,13 +33,7 @@
       "symbol": "US x Iran ceasefire by March 15?",
       "price": "$0.895",
       "size": "0.00"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will the Iranian regime fall by June 30?",
-      "price": "$0.385",
-      "size": "0.00"
     }
   ],
-  "updatedAt": "3/8/2026, 3:51:26 AM ET"
+  "updatedAt": "3/8/2026, 4:36:04 AM ET"
 }
