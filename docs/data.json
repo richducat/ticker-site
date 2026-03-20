@@ -5,6 +5,12 @@
   "totalPnlUsd": "-$27.40",
   "lastTrades": [
     {
+      "side": "REDEEM NO",
+      "symbol": "US x Iran ceasefire by March 15?",
+      "price": "$1.000",
+      "size": "0.00"
+    },
+    {
       "side": "BUY YES",
       "symbol": "Bitcoin Up or Down - March 8, 4:45PM-5:00PM ET",
       "price": "$0.001",
@@ -27,13 +33,7 @@
       "symbol": "Bitcoin Up or Down - March 8, 1:55AM-3:00AM ET",
       "price": "$1.000",
       "size": "11.58"
-    },
-    {
-      "side": "SELL NO",
-      "symbol": "Starmer out by June 30, 2026?",
-      "price": "$0.000",
-      "size": "25.60"
     }
   ],
-  "updatedAt": "3/19/2026, 10:27:24 PM ET"
+  "updatedAt": "3/20/2026, 12:26:07 AM ET"
 }
