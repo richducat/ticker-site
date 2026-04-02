@@ -1,9 +1,15 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$1.88",
-  "positionsCount": 2,
-  "totalPnlUsd": "-$27.26",
+  "exposureUsd": "$0.81",
+  "positionsCount": 1,
+  "totalPnlUsd": "-$27.52",
   "lastTrades": [
+    {
+      "side": "SELL YES",
+      "symbol": "Victor Wembanyama: Points O/U 24.5",
+      "price": "$0.010",
+      "size": "0.00"
+    },
     {
       "side": "BUY YES",
       "symbol": "Victor Wembanyama: Points O/U 24.5",
@@ -27,13 +33,7 @@
       "symbol": "Bitcoin Up or Down - February 16, 7PM ET",
       "price": "$1.000",
       "size": "6.50"
-    },
-    {
-      "side": "REDEEM NO",
-      "symbol": "US x Iran ceasefire by March 15?",
-      "price": "$1.000",
-      "size": "0.00"
     }
   ],
-  "updatedAt": "4/2/2026, 6:01:51 PM ET"
+  "updatedAt": "4/2/2026, 6:59:53 PM ET"
 }
