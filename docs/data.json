@@ -1,9 +1,21 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$0.00",
-  "positionsCount": 0,
-  "totalPnlUsd": "-$27.40",
+  "exposureUsd": "$1.88",
+  "positionsCount": 2,
+  "totalPnlUsd": "-$27.26",
   "lastTrades": [
+    {
+      "side": "BUY YES",
+      "symbol": "Victor Wembanyama: Points O/U 24.5",
+      "price": "$0.003",
+      "size": "404.20"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Keys vs. Bondar: Set 1 Games O/U 8.5",
+      "price": "$0.002",
+      "size": "0.00"
+    },
     {
       "side": "REDEEM NO",
       "symbol": "Bitcoin Up or Down - February 10, 4PM ET",
@@ -21,19 +33,7 @@
       "symbol": "US x Iran ceasefire by March 15?",
       "price": "$1.000",
       "size": "0.00"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "Khamenei out as Supreme Leader of Iran by March 31?",
-      "price": "$1.000",
-      "size": "0.01"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Bitcoin Up or Down - March 8, 4:45PM-5:00PM ET",
-      "price": "$0.001",
-      "size": "6010.00"
     }
   ],
-  "updatedAt": "4/2/2026, 5:02:43 PM ET"
+  "updatedAt": "4/2/2026, 6:01:51 PM ET"
 }
