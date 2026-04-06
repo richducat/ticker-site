@@ -1,9 +1,27 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$1.77",
-  "positionsCount": 1,
-  "totalPnlUsd": "-$30.10",
+  "exposureUsd": "$5.62",
+  "positionsCount": 4,
+  "totalPnlUsd": "-$31.02",
   "lastTrades": [
+    {
+      "side": "BUY YES",
+      "symbol": "Will Elon Musk post 240-259 tweets from March 31 to April 7, 2026?",
+      "price": "$0.090",
+      "size": "22.22"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Bitcoin Up or Down - April 6, 6PM ET",
+      "price": "$0.090",
+      "size": "17.86"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Will Elon Musk post 200-219 tweets from April 3 to April 10, 2026?",
+      "price": "$0.081",
+      "size": "24.69"
+    },
     {
       "side": "BUY YES",
       "symbol": "Will Elon Musk post 40-64 tweets from April 6 to April 8, 2026?",
@@ -15,25 +33,7 @@
       "symbol": "Will the highest temperature in Shanghai be 17°C or below on April 6?",
       "price": "$0.000",
       "size": "0.00"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Game Handicap: GEN (-1.5) vs KT Rolster (+1.5)",
-      "price": "$0.000",
-      "size": "0.00"
-    },
-    {
-      "side": "BUY NO",
-      "symbol": "Ausar Thompson: Assists O/U 3.5",
-      "price": "$0.001",
-      "size": "965.19"
-    },
-    {
-      "side": "SELL YES",
-      "symbol": "Victor Wembanyama: Points O/U 24.5",
-      "price": "$0.010",
-      "size": "0.00"
     }
   ],
-  "updatedAt": "4/6/2026, 6:00:45 PM ET"
+  "updatedAt": "4/6/2026, 7:05:23 PM ET"
 }
