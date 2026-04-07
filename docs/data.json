@@ -1,39 +1,39 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$14.01",
+  "exposureUsd": "$10.25",
   "positionsCount": 5,
-  "totalPnlUsd": "-$25.55",
+  "totalPnlUsd": "-$31.04",
   "lastTrades": [
     {
       "side": "BUY YES",
-      "symbol": "Solana Up or Down - April 6, 7PM ET",
-      "price": "$0.090",
-      "size": "15.63"
+      "symbol": "Will the highest temperature in Seoul be 9°C on April 8?",
+      "price": "$0.041",
+      "size": "7.07"
     },
     {
       "side": "BUY YES",
-      "symbol": "Will Elon Musk post 180-199 tweets from April 3 to April 10, 2026?",
-      "price": "$0.021",
-      "size": "95.23"
+      "symbol": "Will the highest temperature in Wellington be 21°C or higher on April 7?",
+      "price": "$0.040",
+      "size": "0.00"
+    },
+    {
+      "side": "BUY NO",
+      "symbol": "Will the highest temperature in Taipei be 23°C on April 7?",
+      "price": "$0.080",
+      "size": "14.91"
+    },
+    {
+      "side": "SELL NO",
+      "symbol": "Will the Republicans win the South Dakota governor race in 2026?",
+      "price": "$0.070",
+      "size": "7.06"
     },
     {
       "side": "BUY YES",
-      "symbol": "Will Elon Musk post 240-259 tweets from March 31 to April 7, 2026?",
-      "price": "$0.090",
-      "size": "22.22"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Bitcoin Up or Down - April 6, 6PM ET",
-      "price": "$0.090",
-      "size": "17.86"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will Elon Musk post 200-219 tweets from April 3 to April 10, 2026?",
-      "price": "$0.081",
-      "size": "24.69"
+      "symbol": "Will Gary Crockett be the Democratic nominee for Senate in Louisiana?",
+      "price": "$0.085",
+      "size": "11.64"
     }
   ],
-  "updatedAt": "4/6/2026, 7:59:52 PM ET"
+  "updatedAt": "4/6/2026, 11:25:17 PM ET"
 }
