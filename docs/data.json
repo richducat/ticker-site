@@ -1,39 +1,39 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$5.46",
-  "positionsCount": 3,
-  "totalPnlUsd": "-$43.41",
+  "exposureUsd": "$6.15",
+  "positionsCount": 4,
+  "totalPnlUsd": "-$43.43",
   "lastTrades": [
     {
       "side": "SELL YES",
       "symbol": "Will Elon Musk post 40-64 tweets from April 6 to April 8, 2026?",
-      "price": "$0.080",
-      "size": "19.48"
+      "price": "$0.050",
+      "size": "36.64"
     },
     {
       "side": "SELL YES",
+      "symbol": "Will Elon Musk post 180-199 tweets from April 3 to April 10, 2026?",
+      "price": "$0.010",
+      "size": "0.00"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Will Cagliari be relegated from Serie A after the 2025-26 season?",
+      "price": "$0.091",
+      "size": "5.51"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Will Elon Musk post 180-199 tweets from April 3 to April 10, 2026?",
+      "price": "$0.014",
+      "size": "142.85"
+    },
+    {
+      "side": "BUY YES",
       "symbol": "Will Elon Musk post 40-64 tweets from April 6 to April 8, 2026?",
-      "price": "$0.000",
-      "size": "28.16"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will Martin Zubimendi win the 2026 PFA Player of the Year?",
-      "price": "$0.089",
-      "size": "10.11"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will Elon Musk post 280-299 tweets from March 31 to April 7, 2026?",
-      "price": "$0.060",
-      "size": "25.00"
-    },
-    {
-      "side": "BUY NO",
-      "symbol": "Will Elon Musk post 260-279 tweets from March 31 to April 7, 2026?",
-      "price": "$0.070",
-      "size": "20.83"
+      "price": "$0.052",
+      "size": "38.46"
     }
   ],
-  "updatedAt": "4/7/2026, 12:34:21 PM ET"
+  "updatedAt": "4/7/2026, 1:59:19 PM ET"
 }
