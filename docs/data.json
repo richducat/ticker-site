@@ -1,17 +1,11 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$3.61",
+  "exposureUsd": "$3.21",
   "positionsCount": 3,
-  "totalPnlUsd": "-$50.92",
+  "totalPnlUsd": "-$51.31",
   "lastTrades": [
     {
       "side": "BUY YES",
-      "symbol": "Will Elon Musk post 280-299 tweets from April 3 to April 10, 2026?",
-      "price": "$0.160",
-      "size": "5.81"
-    },
-    {
-      "side": "BUY YES",
       "symbol": "Will Elon Musk post 220-239 tweets from April 7 to April 14, 2026?",
       "price": "$0.140",
       "size": "6.64"
@@ -30,10 +24,16 @@
     },
     {
       "side": "BUY YES",
-      "symbol": "Will Elon Musk post 200-219 tweets from April 7 to April 14, 2026?",
-      "price": "$0.068",
-      "size": "13.67"
+      "symbol": "Will Elon Musk post 280-299 tweets from April 3 to April 10, 2026?",
+      "price": "$0.160",
+      "size": "5.81"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Will Elon Musk post 220-239 tweets from April 7 to April 14, 2026?",
+      "price": "$0.140",
+      "size": "6.64"
     }
   ],
-  "updatedAt": "4/8/2026, 10:53:52 AM ET"
+  "updatedAt": "4/8/2026, 12:17:12 PM ET"
 }
