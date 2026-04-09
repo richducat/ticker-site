@@ -1,39 +1,39 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$6.72",
-  "positionsCount": 4,
-  "totalPnlUsd": "-$55.09",
+  "exposureUsd": "$8.87",
+  "positionsCount": 5,
+  "totalPnlUsd": "-$55.54",
   "lastTrades": [
     {
       "side": "BUY YES",
-      "symbol": "Will Elon Musk post 280-299 tweets from April 3 to April 10, 2026?",
-      "price": "$0.045",
-      "size": "44.44"
+      "symbol": "Will Elon Musk post 200-219 tweets from April 7 to April 14, 2026?",
+      "price": "$0.082",
+      "size": "24.39"
     },
     {
       "side": "SELL YES",
-      "symbol": "Will Elon Musk post 180-199 tweets from April 7 to April 14, 2026?",
-      "price": "$0.000",
-      "size": "2.93"
+      "symbol": "Will Elon Musk post 280-299 tweets from April 3 to April 10, 2026?",
+      "price": "$0.040",
+      "size": "42.32"
+    },
+    {
+      "side": "BUY NO",
+      "symbol": "Indian Premier League: Kolkata Knight Riders vs Lucknow Super Giants",
+      "price": "$0.020",
+      "size": "0.00"
     },
     {
       "side": "BUY YES",
-      "symbol": "Will Elon Musk post 180-199 tweets from April 7 to April 14, 2026?",
-      "price": "$0.033",
-      "size": "60.60"
+      "symbol": "Will Elon Musk post 40-64 tweets from April 9 to April 11, 2026?",
+      "price": "$0.350",
+      "size": "5.71"
     },
     {
-      "side": "SELL NO",
-      "symbol": "Will the Republicans win the South Dakota governor race in 2026?",
-      "price": "$0.000",
-      "size": "8.93"
-    },
-    {
-      "side": "SELL YES",
-      "symbol": "Will Elon Musk post 180-199 tweets from April 7 to April 14, 2026?",
-      "price": "$0.000",
-      "size": "100.09"
+      "side": "BUY YES",
+      "symbol": "Ethereum Up or Down - April 9, 12:10PM-12:15PM ET",
+      "price": "$0.795",
+      "size": "-39.60"
     }
   ],
-  "updatedAt": "4/9/2026, 12:48:02 PM ET"
+  "updatedAt": "4/9/2026, 2:00:45 PM ET"
 }
