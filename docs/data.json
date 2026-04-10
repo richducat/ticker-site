@@ -1,9 +1,21 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$11.41",
+  "exposureUsd": "$10.73",
   "positionsCount": 15,
-  "totalPnlUsd": "-$54.08",
+  "totalPnlUsd": "-$54.75",
   "lastTrades": [
+    {
+      "side": "SELL YES",
+      "symbol": "Will Elon Musk post 280-299 tweets from April 3 to April 10, 2026?",
+      "price": "$0.000",
+      "size": "2.84"
+    },
+    {
+      "side": "SELL YES",
+      "symbol": "Will the highest temperature in Seattle be between 68-69°F on April 10?",
+      "price": "$0.000",
+      "size": "3.42"
+    },
     {
       "side": "SELL YES",
       "symbol": "Will the highest temperature in Seattle be between 68-69°F on April 10?",
@@ -21,19 +33,7 @@
       "symbol": "Will Elon Musk post 200-219 tweets from April 7 to April 14, 2026?",
       "price": "$0.000",
       "size": "1.11"
-    },
-    {
-      "side": "SELL YES",
-      "symbol": "Will Elon Musk post 280-299 tweets from April 3 to April 10, 2026?",
-      "price": "$0.000",
-      "size": "44.44"
-    },
-    {
-      "side": "SELL YES",
-      "symbol": "Will Elon Musk post 180-199 tweets from April 7 to April 14, 2026?",
-      "price": "$0.000",
-      "size": "57.67"
     }
   ],
-  "updatedAt": "4/9/2026, 7:39:47 PM ET"
+  "updatedAt": "4/9/2026, 10:51:13 PM ET"
 }
