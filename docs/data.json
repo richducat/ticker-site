@@ -1,39 +1,39 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$16.07",
-  "positionsCount": 7,
-  "totalPnlUsd": "-$59.62",
+  "exposureUsd": "$15.14",
+  "positionsCount": 8,
+  "totalPnlUsd": "-$60.62",
   "lastTrades": [
     {
       "side": "SELL YES",
+      "symbol": "Will Elon Musk post 200-219 tweets from April 10 to April 17, 2026?",
+      "price": "$0.000",
+      "size": "42.39"
+    },
+    {
+      "side": "SELL YES",
       "symbol": "Will Elon Musk post 200-219 tweets from April 7 to April 14, 2026?",
-      "price": "$0.020",
+      "price": "$0.000",
       "size": "42.32"
     },
     {
-      "side": "BUY YES",
-      "symbol": "Will the highest temperature in Shenzhen be 32°C or higher on April 11?",
-      "price": "$0.003",
-      "size": "53.33"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will the highest temperature in Shenzhen be 26°C on April 13?",
-      "price": "$0.006",
-      "size": "26.66"
-    },
-    {
-      "side": "BUY NO",
-      "symbol": "Ethereum Up or Down - April 10, 10:15PM-10:30PM ET",
-      "price": "$0.011",
-      "size": "116.09"
-    },
-    {
-      "side": "BUY YES",
+      "side": "SELL YES",
       "symbol": "Will Elon Musk post 40-64 tweets from April 9 to April 11, 2026?",
-      "price": "$0.059",
-      "size": "32.30"
+      "price": "$0.000",
+      "size": "53.49"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Will Elon Musk post 200-219 tweets from April 10 to April 17, 2026?",
+      "price": "$0.090",
+      "size": "21.19"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Will Elon Musk post 240-259 tweets from April 10 to April 17, 2026?",
+      "price": "$0.250",
+      "size": "7.70"
     }
   ],
-  "updatedAt": "4/11/2026, 2:06:09 AM ET"
+  "updatedAt": "4/11/2026, 3:33:35 AM ET"
 }
