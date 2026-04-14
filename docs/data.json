@@ -1,9 +1,15 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$11.14",
+  "exposureUsd": "$12.92",
   "positionsCount": 6,
-  "totalPnlUsd": "-$64.84",
+  "totalPnlUsd": "-$63.05",
   "lastTrades": [
+    {
+      "side": "SELL YES",
+      "symbol": "Will Elon Musk post 280-299 tweets from April 7 to April 14, 2026?",
+      "price": "$0.000",
+      "size": "15.92"
+    },
     {
       "side": "BUY YES",
       "symbol": "Will Elon Musk post 300-319 tweets from April 10 to April 17, 2026?",
@@ -27,13 +33,7 @@
       "symbol": "Map 2: Odd/Even Total Kills?",
       "price": "$1.000",
       "size": "0.00"
-    },
-    {
-      "side": "REDEEM NO",
-      "symbol": "Will the highest temperature in Chicago be between 38-39°F on February 11?",
-      "price": "$1.000",
-      "size": "5.42"
     }
   ],
-  "updatedAt": "4/13/2026, 10:51:43 PM ET"
+  "updatedAt": "4/14/2026, 1:27:29 AM ET"
 }
