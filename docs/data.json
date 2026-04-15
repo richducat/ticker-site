@@ -1,9 +1,15 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$13.11",
-  "positionsCount": 14,
-  "totalPnlUsd": "-$57.46",
+  "exposureUsd": "$13.20",
+  "positionsCount": 10,
+  "totalPnlUsd": "-$59.70",
   "lastTrades": [
+    {
+      "side": "BUY NO",
+      "symbol": "XRP Up or Down - April 15, 2PM ET",
+      "price": "$0.050",
+      "size": "7.40"
+    },
     {
       "side": "BUY NO",
       "symbol": "Barcelona Open: Cameron Norrie vs Ethan Quinn",
@@ -27,13 +33,7 @@
       "symbol": "Will Porto score the most goals in 2025-26 UEFA Europa League?",
       "price": "$0.030",
       "size": "8.18"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will Porto score the most goals in 2025-26 UEFA Europa League?",
-      "price": "$0.153",
-      "size": "8.18"
     }
   ],
-  "updatedAt": "4/15/2026, 2:41:56 PM ET"
+  "updatedAt": "4/15/2026, 4:04:45 PM ET"
 }
