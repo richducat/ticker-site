@@ -1,9 +1,15 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$11.37",
+  "exposureUsd": "$11.08",
   "positionsCount": 6,
-  "totalPnlUsd": "-$57.21",
+  "totalPnlUsd": "-$57.68",
   "lastTrades": [
+    {
+      "side": "BUY NO",
+      "symbol": "XRP Up or Down - April 14, 7PM ET",
+      "price": "$0.040",
+      "size": "14.00"
+    },
     {
       "side": "BUY YES",
       "symbol": "Will Seattle have more than 5 inches of precipitation in April?",
@@ -27,13 +33,7 @@
       "symbol": "Will Elon Musk post 40-64 tweets from April 13 to April 15, 2026?",
       "price": "$0.000",
       "size": "6.23"
-    },
-    {
-      "side": "SELL YES",
-      "symbol": "Will Elon Musk post 360-379 tweets from April 10 to April 17, 2026?",
-      "price": "$0.000",
-      "size": "16.19"
     }
   ],
-  "updatedAt": "4/14/2026, 7:23:31 PM ET"
+  "updatedAt": "4/14/2026, 8:07:20 PM ET"
 }
