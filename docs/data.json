@@ -1,39 +1,39 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$11.22",
-  "positionsCount": 10,
-  "totalPnlUsd": "-$59.71",
+  "exposureUsd": "$12.18",
+  "positionsCount": 11,
+  "totalPnlUsd": "-$56.13",
   "lastTrades": [
     {
       "side": "BUY YES",
-      "symbol": "Will the highest temperature in Manila be 32°C on April 15?",
-      "price": "$0.002",
-      "size": "325.00"
+      "symbol": "Will Elon Musk post 220-239 tweets from April 14 to April 21, 2026?",
+      "price": "$0.160",
+      "size": "11.96"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Solana Up or Down - April 15, 5:25AM-5:30AM ET",
+      "price": "$0.026",
+      "size": "47.42"
     },
     {
       "side": "BUY NO",
-      "symbol": "Will the highest temperature in Shenzhen be 30°C on April 15?",
-      "price": "$0.015",
-      "size": "0.00"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will the highest temperature in Wuhan be 22°C on April 15?",
-      "price": "$0.060",
-      "size": "0.00"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will Elon Musk post 320-339 tweets from April 10 to April 17, 2026?",
-      "price": "$0.124",
+      "symbol": "Will the highest temperature in Guangzhou be 31°C on April 15?",
+      "price": "$0.051",
       "size": "0.00"
     },
     {
       "side": "SELL YES",
       "symbol": "Will Elon Musk post 65-89 tweets from April 13 to April 15, 2026?",
-      "price": "$0.050",
-      "size": "63.25"
+      "price": "$0.660",
+      "size": "0.00"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Will the highest temperature in Manila be 32°C on April 15?",
+      "price": "$0.002",
+      "size": "465.00"
     }
   ],
-  "updatedAt": "4/15/2026, 4:13:09 AM ET"
+  "updatedAt": "4/15/2026, 5:57:13 AM ET"
 }
