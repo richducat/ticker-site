@@ -1,9 +1,15 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$14.88",
+  "exposureUsd": "$15.15",
   "positionsCount": 13,
-  "totalPnlUsd": "-$57.90",
+  "totalPnlUsd": "-$57.80",
   "lastTrades": [
+    {
+      "side": "SELL NO",
+      "symbol": "Will the highest temperature in Guangzhou be 31°C on April 15?",
+      "price": "$0.000",
+      "size": "24.10"
+    },
     {
       "side": "BUY YES",
       "symbol": "Will Elon Musk post 260-279 tweets from April 14 to April 21, 2026?",
@@ -27,13 +33,7 @@
       "symbol": "Will the highest temperature in Shenzhen be 30°C on April 15?",
       "price": "$0.015",
       "size": "0.02"
-    },
-    {
-      "side": "BUY NO",
-      "symbol": "Will the highest temperature in Guangzhou be 31°C on April 15?",
-      "price": "$0.052",
-      "size": "24.10"
     }
   ],
-  "updatedAt": "4/15/2026, 8:11:08 AM ET"
+  "updatedAt": "4/15/2026, 10:10:40 AM ET"
 }
