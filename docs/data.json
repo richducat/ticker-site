@@ -1,9 +1,15 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$19.06",
+  "exposureUsd": "$19.34",
   "positionsCount": 11,
-  "totalPnlUsd": "-$59.86",
+  "totalPnlUsd": "-$59.87",
   "lastTrades": [
+    {
+      "side": "REDEEM YES",
+      "symbol": "New York Mets vs. Los Angeles Dodgers",
+      "price": "$1.000",
+      "size": "8.14"
+    },
     {
       "side": "BUY NO",
       "symbol": "OpenAI announces AGI before 2027",
@@ -27,13 +33,7 @@
       "symbol": "Will Elon Musk post 200-219 tweets from April 14 to April 21, 2026?",
       "price": "$0.078",
       "size": "8.58"
-    },
-    {
-      "side": "SELL YES",
-      "symbol": "Will Porto score the most goals in 2025-26 UEFA Europa League?",
-      "price": "$0.000",
-      "size": "7.77"
     }
   ],
-  "updatedAt": "4/16/2026, 7:11:58 AM ET"
+  "updatedAt": "4/16/2026, 8:43:06 AM ET"
 }
