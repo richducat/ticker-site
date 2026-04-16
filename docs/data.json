@@ -1,9 +1,15 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$18.94",
-  "positionsCount": 12,
-  "totalPnlUsd": "-$66.75",
+  "exposureUsd": "$19.06",
+  "positionsCount": 11,
+  "totalPnlUsd": "-$59.86",
   "lastTrades": [
+    {
+      "side": "BUY NO",
+      "symbol": "OpenAI announces AGI before 2027",
+      "price": "$0.569",
+      "size": "-0.17"
+    },
     {
       "side": "REDEEM YES",
       "symbol": "Will the highest temperature in Hong Kong be 28°C on April 15?",
@@ -27,13 +33,7 @@
       "symbol": "Will Porto score the most goals in 2025-26 UEFA Europa League?",
       "price": "$0.000",
       "size": "7.77"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "New York Mets vs. Los Angeles Dodgers",
-      "price": "$0.070",
-      "size": "8.14"
     }
   ],
-  "updatedAt": "4/16/2026, 5:56:51 AM ET"
+  "updatedAt": "4/16/2026, 7:11:58 AM ET"
 }
