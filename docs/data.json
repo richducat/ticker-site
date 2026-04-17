@@ -1,9 +1,21 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$14.45",
+  "exposureUsd": "$14.43",
   "positionsCount": 9,
-  "totalPnlUsd": "-$75.44",
+  "totalPnlUsd": "-$75.47",
   "lastTrades": [
+    {
+      "side": "BUY YES",
+      "symbol": "Will Elon Musk post 200-219 tweets from April 14 to April 21, 2026?",
+      "price": "$0.037",
+      "size": "19.18"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Will Elon Musk post 180-199 tweets from April 14 to April 21, 2026?",
+      "price": "$0.009",
+      "size": "78.88"
+    },
     {
       "side": "BUY YES",
       "symbol": "Will Elon Musk post 220-239 tweets from April 17 to April 24, 2026?",
@@ -17,23 +29,11 @@
       "size": "11.83"
     },
     {
-      "side": "REDEEM YES",
-      "symbol": "Will Elon Musk post 300-319 tweets from April 10 to April 17, 2026?",
-      "price": "$1.000",
-      "size": "0.00"
-    },
-    {
       "side": "BUY YES",
-      "symbol": "Solana Up or Down - April 17, 2PM ET",
-      "price": "$0.003",
-      "size": "136.66"
-    },
-    {
-      "side": "SELL YES",
-      "symbol": "Will Elon Musk post 40-64 tweets from April 16 to April 18, 2026?",
-      "price": "$0.000",
-      "size": "30.51"
+      "symbol": "Will Elon Musk post 220-239 tweets from April 17 to April 24, 2026?",
+      "price": "$0.090",
+      "size": "7.88"
     }
   ],
-  "updatedAt": "4/17/2026, 4:50:57 PM ET"
+  "updatedAt": "4/17/2026, 5:46:41 PM ET"
 }
