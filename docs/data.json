@@ -1,39 +1,39 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$21.19",
-  "positionsCount": 10,
-  "totalPnlUsd": "-$64.93",
+  "exposureUsd": "$16.73",
+  "positionsCount": 11,
+  "totalPnlUsd": "-$69.67",
   "lastTrades": [
     {
       "side": "BUY NO",
-      "symbol": "Dogecoin Up or Down - April 16, 6PM ET",
-      "price": "$0.090",
-      "size": "6.11"
+      "symbol": "Will the highest temperature in Seoul be 17°C on April 17?",
+      "price": "$0.022",
+      "size": "33.18"
     },
     {
-      "side": "REDEEM YES",
-      "symbol": "New York Mets vs. Los Angeles Dodgers",
-      "price": "$1.000",
-      "size": "8.14"
+      "side": "BUY YES",
+      "symbol": "Will the highest temperature in Jakarta be 34°C on April 17?",
+      "price": "$0.140",
+      "size": "5.85"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Will the highest temperature in Madrid be 28°C on April 17?",
+      "price": "$0.070",
+      "size": "12.42"
     },
     {
       "side": "BUY NO",
-      "symbol": "OpenAI announces AGI before 2027",
-      "price": "$0.569",
-      "size": "-0.17"
+      "symbol": "Will the highest temperature in Wuhan be 27°C on April 17?",
+      "price": "$0.021",
+      "size": "0.00"
     },
     {
-      "side": "REDEEM YES",
-      "symbol": "Will the highest temperature in Hong Kong be 28°C on April 15?",
-      "price": "$1.000",
-      "size": "7.45"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "Will Elon Musk post 65-89 tweets from April 13 to April 15, 2026?",
-      "price": "$1.000",
-      "size": "0.01"
+      "side": "BUY NO",
+      "symbol": "Will the highest temperature in Jakarta be 33°C on April 17?",
+      "price": "$0.160",
+      "size": "0.00"
     }
   ],
-  "updatedAt": "4/17/2026, 1:31:02 AM ET"
+  "updatedAt": "4/17/2026, 3:53:30 AM ET"
 }
