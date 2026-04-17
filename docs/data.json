@@ -1,8 +1,8 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$14.43",
+  "exposureUsd": "$14.67",
   "positionsCount": 9,
-  "totalPnlUsd": "-$75.47",
+  "totalPnlUsd": "-$75.65",
   "lastTrades": [
     {
       "side": "BUY YES",
@@ -35,5 +35,5 @@
       "size": "7.88"
     }
   ],
-  "updatedAt": "4/17/2026, 5:46:41 PM ET"
+  "updatedAt": "4/17/2026, 6:43:24 PM ET"
 }
