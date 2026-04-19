@@ -7,6 +7,12 @@
     {
       "side": "SELL YES",
       "symbol": "Will Elon Musk post 220-239 tweets from April 14 to April 21, 2026?",
+      "price": "$0.000",
+      "size": "11.96"
+    },
+    {
+      "side": "SELL YES",
+      "symbol": "Will Elon Musk post 220-239 tweets from April 14 to April 21, 2026?",
       "price": "$0.240",
       "size": "11.96"
     },
@@ -27,13 +33,7 @@
       "symbol": "Will Elon Musk post 240-259 tweets from April 14 to April 21, 2026?",
       "price": "$0.260",
       "size": "10.65"
-    },
-    {
-      "side": "SELL YES",
-      "symbol": "Will Elon Musk post 240-259 tweets from April 14 to April 21, 2026?",
-      "price": "$0.260",
-      "size": "10.65"
     }
   ],
-  "updatedAt": "4/19/2026, 11:07:10 AM ET"
+  "updatedAt": "4/19/2026, 12:02:56 PM ET"
 }
