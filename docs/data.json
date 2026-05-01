@@ -1,8 +1,8 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$7.33",
+  "exposureUsd": "$6.26",
   "positionsCount": 4,
-  "totalPnlUsd": "-$61.61",
+  "totalPnlUsd": "-$63.14",
   "lastTrades": [
     {
       "side": "REDEEM YES",
@@ -35,5 +35,5 @@
       "size": "10.65"
     }
   ],
-  "updatedAt": "5/1/2026, 1:09:10 AM ET"
+  "updatedAt": "5/1/2026, 3:41:45 AM ET"
 }
