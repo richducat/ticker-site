@@ -1,9 +1,15 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$1.14",
+  "exposureUsd": "$1.12",
   "positionsCount": 3,
-  "totalPnlUsd": "-$61.61",
+  "totalPnlUsd": "-$66.54",
   "lastTrades": [
+    {
+      "side": "REDEEM NO",
+      "symbol": "XRP Up or Down - May 12, 11:20AM-11:25AM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
     {
       "side": "BUY NO",
       "symbol": "XRP Up or Down - May 12, 11:20AM-11:25AM ET",
@@ -27,13 +33,7 @@
       "symbol": "Will Elon Musk post 220-239 tweets from April 14 to April 21, 2026?",
       "price": "$0.000",
       "size": "11.96"
-    },
-    {
-      "side": "SELL YES",
-      "symbol": "Will Elon Musk post 220-239 tweets from April 14 to April 21, 2026?",
-      "price": "$0.240",
-      "size": "11.96"
     }
   ],
-  "updatedAt": "5/12/2026, 11:21:27 AM ET"
+  "updatedAt": "5/12/2026, 1:32:44 PM ET"
 }
