@@ -2,8 +2,20 @@
   "balanceUsd": "$0.00",
   "exposureUsd": "$1.29",
   "positionsCount": 3,
-  "totalPnlUsd": "-$61.61",
+  "totalPnlUsd": "-$66.54",
   "lastTrades": [
+    {
+      "side": "BUY YES",
+      "symbol": "Will the lowest temperature in New York City be 63°F or below on May 20?",
+      "price": "$0.000",
+      "size": "0.00"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Will the lowest temperature in New York City be between 54-55°F on May 21?",
+      "price": "$0.000",
+      "size": "0.00"
+    },
     {
       "side": "BUY YES",
       "symbol": "Will the lowest temperature in New York City be 63°F or below on May 20?",
@@ -21,19 +33,7 @@
       "symbol": "Will Elon Musk post 65-89 tweets from May 18 to May 20, 2026?",
       "price": "$0.000",
       "size": "0.00"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will Elon Musk post 40-64 tweets from May 18 to May 20, 2026?",
-      "price": "$0.000",
-      "size": "0.00"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will the lowest temperature in New York City be 63°F or below on May 20?",
-      "price": "$0.000",
-      "size": "0.00"
     }
   ],
-  "updatedAt": "5/18/2026, 5:46:36 PM ET"
+  "updatedAt": "5/18/2026, 7:04:33 PM ET"
 }
