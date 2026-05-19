@@ -11,12 +11,6 @@
       "size": "0.00"
     },
     {
-      "side": "REDEEM YES",
-      "symbol": "Solana Up or Down - May 19, 11:50AM-11:55AM ET",
-      "price": "$1.000",
-      "size": "0.00"
-    },
-    {
       "side": "BUY YES",
       "symbol": "Will Elon Musk post 65-89 tweets from May 18 to May 20, 2026?",
       "price": "$0.000",
@@ -29,11 +23,17 @@
       "size": "0.00"
     },
     {
-      "side": "BUY YES",
-      "symbol": "Solana Up or Down - May 19, 11:50AM-11:55AM ET",
+      "side": "BUY NO",
+      "symbol": "Philadelphia Phillies vs. Boston Red Sox",
+      "price": "$0.000",
+      "size": "0.00"
+    },
+    {
+      "side": "BUY NO",
+      "symbol": "Philadelphia Phillies vs. Boston Red Sox",
       "price": "$0.000",
       "size": "0.00"
     }
   ],
-  "updatedAt": "5/19/2026, 12:23:17 PM ET"
+  "updatedAt": "5/19/2026, 2:21:01 PM ET"
 }
