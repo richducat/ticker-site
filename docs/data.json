@@ -1,9 +1,21 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$1.29",
+  "exposureUsd": "$1.02",
   "positionsCount": 3,
-  "totalPnlUsd": "-$61.61",
+  "totalPnlUsd": "-$66.54",
   "lastTrades": [
+    {
+      "side": "BUY YES",
+      "symbol": "Will Elon Musk post 180-199 tweets from May 19 to May 26, 2026?",
+      "price": "$0.000",
+      "size": "0.00"
+    },
+    {
+      "side": "BUY NO",
+      "symbol": "Philadelphia Phillies vs. Boston Red Sox",
+      "price": "$0.000",
+      "size": "0.00"
+    },
     {
       "side": "BUY YES",
       "symbol": "Will Elon Musk post 160-179 tweets from May 19 to May 26, 2026?",
@@ -17,23 +29,11 @@
       "size": "0.00"
     },
     {
-      "side": "BUY YES",
-      "symbol": "Will Elon Musk post 120-139 tweets from May 19 to May 26, 2026?",
-      "price": "$0.000",
-      "size": "0.00"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will Elon Musk post 300-319 tweets from May 19 to May 26, 2026?",
-      "price": "$0.000",
-      "size": "0.00"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will Elon Musk post 280-299 tweets from May 19 to May 26, 2026?",
+      "side": "BUY NO",
+      "symbol": "Philadelphia Phillies vs. Boston Red Sox",
       "price": "$0.000",
       "size": "0.00"
     }
   ],
-  "updatedAt": "5/20/2026, 12:27:20 PM ET"
+  "updatedAt": "5/20/2026, 2:41:13 PM ET"
 }
