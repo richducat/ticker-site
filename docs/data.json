@@ -1,6 +1,6 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$1.29",
+  "exposureUsd": "$1.44",
   "positionsCount": 3,
   "totalPnlUsd": "-$61.61",
   "lastTrades": [
@@ -24,16 +24,16 @@
     },
     {
       "side": "BUY YES",
-      "symbol": "Ethereum Up or Down - May 21, 8:30PM-8:35PM ET",
+      "symbol": "Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026?",
       "price": "$0.000",
       "size": "0.00"
     },
     {
       "side": "BUY YES",
-      "symbol": "Will Elon Musk post 240-259 tweets from May 19 to May 26, 2026?",
+      "symbol": "Will Elon Musk post 280-299 tweets from May 19 to May 26, 2026?",
       "price": "$0.000",
       "size": "0.00"
     }
   ],
-  "updatedAt": "5/21/2026, 9:29:52 PM ET"
+  "updatedAt": "5/22/2026, 1:45:43 AM ET"
 }
