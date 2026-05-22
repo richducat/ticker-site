@@ -17,6 +17,12 @@
       "size": "0.00"
     },
     {
+      "side": "REDEEM YES",
+      "symbol": "Ethereum Up or Down - May 22, 7:45AM-7:50AM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
+    {
       "side": "BUY YES",
       "symbol": "Will Elon Musk post 300-319 tweets from May 19 to May 26, 2026?",
       "price": "$0.000",
@@ -24,16 +30,10 @@
     },
     {
       "side": "BUY YES",
-      "symbol": "Will Elon Musk post 280-299 tweets from May 19 to May 26, 2026?",
-      "price": "$0.000",
-      "size": "0.00"
-    },
-    {
-      "side": "BUY YES",
-      "symbol": "Will Elon Musk post 260-279 tweets from May 19 to May 26, 2026?",
+      "symbol": "Ethereum Up or Down - May 22, 7:45AM-7:50AM ET",
       "price": "$0.000",
       "size": "0.00"
     }
   ],
-  "updatedAt": "5/22/2026, 5:32:45 AM ET"
+  "updatedAt": "5/22/2026, 8:22:45 AM ET"
 }
