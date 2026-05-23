@@ -1,17 +1,11 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$1.02",
+  "exposureUsd": "$1.03",
   "positionsCount": 3,
-  "totalPnlUsd": "-$61.61",
+  "totalPnlUsd": "-$66.54",
   "lastTrades": [
     {
       "side": "BUY YES",
-      "symbol": "Will Elon Musk post 320-339 tweets from May 19 to May 26, 2026?",
-      "price": "$0.000",
-      "size": "0.00"
-    },
-    {
-      "side": "BUY YES",
       "symbol": "Will Elon Musk post 300-319 tweets from May 19 to May 26, 2026?",
       "price": "$0.000",
       "size": "0.00"
@@ -23,17 +17,23 @@
       "size": "0.00"
     },
     {
-      "side": "BUY NO",
-      "symbol": "Atlanta Braves vs. Miami Marlins",
-      "price": "$0.000",
+      "side": "REDEEM YES",
+      "symbol": "Solana Up or Down - May 23, 8:45AM-9:00AM ET",
+      "price": "$1.000",
       "size": "0.00"
     },
     {
       "side": "BUY YES",
       "symbol": "Will Elon Musk post 300-319 tweets from May 19 to May 26, 2026?",
+      "price": "$0.000",
+      "size": "0.00"
+    },
+    {
+      "side": "BUY YES",
+      "symbol": "Solana Up or Down - May 23, 8:45AM-9:00AM ET",
       "price": "$0.000",
       "size": "0.00"
     }
   ],
-  "updatedAt": "5/23/2026, 8:01:11 AM ET"
+  "updatedAt": "5/23/2026, 10:09:05 AM ET"
 }
