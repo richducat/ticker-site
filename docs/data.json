@@ -6,6 +6,24 @@
   "lastTrades": [
     {
       "side": "REDEEM YES",
+      "symbol": "Bitcoin Up or Down - May 25, 8:05AM-8:10AM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
+    {
+      "side": "REDEEM YES",
+      "symbol": "Solana Up or Down - May 25, 8:20AM-8:25AM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
+    {
+      "side": "REDEEM YES",
+      "symbol": "Bitcoin Up or Down - May 25, 7:05AM-7:10AM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
+    {
+      "side": "REDEEM YES",
       "symbol": "Solana Up or Down - May 24, 2:45PM-3:00PM ET",
       "price": "$1.000",
       "size": "0.00"
@@ -15,25 +33,7 @@
       "symbol": "XRP Up or Down - May 24, 2:40AM-2:45AM ET",
       "price": "$1.000",
       "size": "0.00"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "Solana Up or Down - May 24, 12:30AM-12:45AM ET",
-      "price": "$1.000",
-      "size": "0.00"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "XRP Up or Down - May 24, 12:30AM-12:35AM ET",
-      "price": "$1.000",
-      "size": "0.00"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "XRP Up or Down - May 23, 10:05PM-10:10PM ET",
-      "price": "$1.000",
-      "size": "0.00"
     }
   ],
-  "updatedAt": "5/25/2026, 5:11:42 AM ET"
+  "updatedAt": "5/25/2026, 8:49:04 AM ET"
 }
