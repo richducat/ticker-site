@@ -1,9 +1,21 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$1.08",
+  "exposureUsd": "$1.13",
   "positionsCount": 3,
-  "totalPnlUsd": "-$61.61",
+  "totalPnlUsd": "-$61.60",
   "lastTrades": [
+    {
+      "side": "REDEEM YES",
+      "symbol": "Ethereum Up or Down - May 25, 3:05PM-3:10PM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
+    {
+      "side": "REDEEM NO",
+      "symbol": "Spread: Baltimore Orioles (-3.5)",
+      "price": "$1.000",
+      "size": "0.00"
+    },
     {
       "side": "REDEEM YES",
       "symbol": "XRP Up or Down - May 25, 12:20PM-12:25PM ET",
@@ -21,19 +33,7 @@
       "symbol": "Solana Up or Down - May 25, 8:20AM-8:25AM ET",
       "price": "$1.000",
       "size": "0.00"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "Bitcoin Up or Down - May 25, 7:05AM-7:10AM ET",
-      "price": "$1.000",
-      "size": "0.00"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "Solana Up or Down - May 24, 2:45PM-3:00PM ET",
-      "price": "$1.000",
-      "size": "0.00"
     }
   ],
-  "updatedAt": "5/25/2026, 1:46:02 PM ET"
+  "updatedAt": "5/25/2026, 3:45:07 PM ET"
 }
