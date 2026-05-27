@@ -2,38 +2,38 @@
   "balanceUsd": "$0.00",
   "exposureUsd": "$1.18",
   "positionsCount": 3,
-  "totalPnlUsd": "-$61.61",
+  "totalPnlUsd": "-$61.60",
   "lastTrades": [
     {
+      "side": "REDEEM YES",
+      "symbol": "Bitcoin Up or Down - May 27, 5:30AM-5:35AM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
+    {
+      "side": "REDEEM YES",
+      "symbol": "Bitcoin Up or Down - May 27, 5:20AM-5:25AM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
+    {
       "side": "REDEEM NO",
-      "symbol": "Spread: Club Nacional de Football (-1.5)",
-      "price": "$1.000",
-      "size": "0.00"
-    },
-    {
-      "side": "REDEEM NO",
-      "symbol": "Bitcoin Up or Down - May 26, 11:35PM-11:40PM ET",
+      "symbol": "Bitcoin Up or Down - May 27, 4:40AM-4:45AM ET",
       "price": "$1.000",
       "size": "0.00"
     },
     {
       "side": "REDEEM YES",
-      "symbol": "Ethereum Up or Down - May 26, 11:25PM-11:30PM ET",
+      "symbol": "XRP Up or Down - May 27, 4:15AM-4:20AM ET",
       "price": "$1.000",
       "size": "0.00"
     },
     {
       "side": "REDEEM YES",
-      "symbol": "Solana Up or Down - May 26, 10:40PM-10:45PM ET",
-      "price": "$1.000",
-      "size": "0.00"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "Bitcoin Up or Down - May 26, 10:40PM-10:45PM ET",
+      "symbol": "Ethereum Up or Down - May 27, 4:10AM-4:15AM ET",
       "price": "$1.000",
       "size": "0.00"
     }
   ],
-  "updatedAt": "5/27/2026, 4:26:16 AM ET"
+  "updatedAt": "5/27/2026, 7:54:48 AM ET"
 }
