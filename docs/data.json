@@ -1,9 +1,21 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$0.93",
+  "exposureUsd": "$1.18",
   "positionsCount": 3,
-  "totalPnlUsd": "-$61.60",
+  "totalPnlUsd": "-$61.61",
   "lastTrades": [
+    {
+      "side": "REDEEM NO",
+      "symbol": "Spread: Club Nacional de Football (-1.5)",
+      "price": "$1.000",
+      "size": "0.00"
+    },
+    {
+      "side": "REDEEM NO",
+      "symbol": "Bitcoin Up or Down - May 26, 11:35PM-11:40PM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
     {
       "side": "REDEEM YES",
       "symbol": "Ethereum Up or Down - May 26, 11:25PM-11:30PM ET",
@@ -21,19 +33,7 @@
       "symbol": "Bitcoin Up or Down - May 26, 10:40PM-10:45PM ET",
       "price": "$1.000",
       "size": "0.00"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "Bitcoin above 75,600 on May 26, 4PM ET?",
-      "price": "$1.000",
-      "size": "0.00"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "Ethereum Up or Down - May 26, 3:05PM-3:10PM ET",
-      "price": "$1.000",
-      "size": "0.00"
     }
   ],
-  "updatedAt": "5/27/2026, 12:07:30 AM ET"
+  "updatedAt": "5/27/2026, 4:26:16 AM ET"
 }
