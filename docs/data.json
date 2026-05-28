@@ -1,39 +1,39 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$0.92",
+  "exposureUsd": "$1.12",
   "positionsCount": 3,
   "totalPnlUsd": "-$61.60",
   "lastTrades": [
     {
       "side": "REDEEM YES",
-      "symbol": "XRP Up or Down - May 27, 1:20PM-1:25PM ET",
+      "symbol": "XRP Up or Down - May 28, 3:20AM-3:25AM ET",
       "price": "$1.000",
       "size": "0.00"
     },
     {
       "side": "REDEEM YES",
-      "symbol": "Bitcoin Up or Down - May 27, 8:25AM-8:30AM ET",
+      "symbol": "Istanbul: Daniel Michalski vs Benjamin Hassan",
       "price": "$1.000",
       "size": "0.00"
     },
     {
       "side": "REDEEM YES",
-      "symbol": "Bitcoin Up or Down - May 27, 5:30AM-5:35AM ET",
+      "symbol": "Istanbul: Daniel Michalski vs Benjamin Hassan",
       "price": "$1.000",
       "size": "0.00"
     },
     {
       "side": "REDEEM YES",
-      "symbol": "Bitcoin Up or Down - May 27, 5:20AM-5:25AM ET",
+      "symbol": "Ethereum Up or Down - May 28, 2:40AM-2:45AM ET",
       "price": "$1.000",
       "size": "0.00"
     },
     {
-      "side": "REDEEM NO",
-      "symbol": "Bitcoin Up or Down - May 27, 4:40AM-4:45AM ET",
+      "side": "REDEEM YES",
+      "symbol": "Solana Up or Down - May 28, 1:30AM-1:45AM ET",
       "price": "$1.000",
       "size": "0.00"
     }
   ],
-  "updatedAt": "5/28/2026, 12:50:15 AM ET"
+  "updatedAt": "5/28/2026, 4:43:14 AM ET"
 }
