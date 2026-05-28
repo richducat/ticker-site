@@ -6,6 +6,12 @@
   "lastTrades": [
     {
       "side": "REDEEM YES",
+      "symbol": "Solana Up or Down - May 28, 12:55PM-1:00PM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
+    {
+      "side": "REDEEM YES",
       "symbol": "Bitcoin Up or Down - May 28, 11:40AM-11:45AM ET",
       "price": "$1.000",
       "size": "0.00"
@@ -27,13 +33,7 @@
       "symbol": "Bitcoin Up or Down - May 28, 8:45AM-8:50AM ET",
       "price": "$1.000",
       "size": "0.00"
-    },
-    {
-      "side": "REDEEM NO",
-      "symbol": "Ethereum Up or Down - May 28, 7:25AM-7:30AM ET",
-      "price": "$1.000",
-      "size": "0.00"
     }
   ],
-  "updatedAt": "5/28/2026, 12:55:16 PM ET"
+  "updatedAt": "5/28/2026, 3:37:33 PM ET"
 }
