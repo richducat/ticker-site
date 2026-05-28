@@ -1,9 +1,15 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$1.12",
+  "exposureUsd": "$1.14",
   "positionsCount": 3,
-  "totalPnlUsd": "-$61.60",
+  "totalPnlUsd": "-$61.61",
   "lastTrades": [
+    {
+      "side": "REDEEM NO",
+      "symbol": "Ethereum Up or Down - May 28, 7:25AM-7:30AM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
     {
       "side": "REDEEM YES",
       "symbol": "XRP Up or Down - May 28, 3:20AM-3:25AM ET",
@@ -27,13 +33,7 @@
       "symbol": "Ethereum Up or Down - May 28, 2:40AM-2:45AM ET",
       "price": "$1.000",
       "size": "0.00"
-    },
-    {
-      "side": "REDEEM YES",
-      "symbol": "Solana Up or Down - May 28, 1:30AM-1:45AM ET",
-      "price": "$1.000",
-      "size": "0.00"
     }
   ],
-  "updatedAt": "5/28/2026, 4:43:14 AM ET"
+  "updatedAt": "5/28/2026, 8:30:34 AM ET"
 }
