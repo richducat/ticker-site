@@ -2,8 +2,14 @@
   "balanceUsd": "$0.00",
   "exposureUsd": "$0.96",
   "positionsCount": 3,
-  "totalPnlUsd": "-$66.54",
+  "totalPnlUsd": "-$61.61",
   "lastTrades": [
+    {
+      "side": "REDEEM NO",
+      "symbol": "XRP Up or Down - May 31, 4:30PM-4:35PM ET",
+      "price": "$1.000",
+      "size": "0.00"
+    },
     {
       "side": "REDEEM YES",
       "symbol": "XRP Up or Down - May 30, 3:45PM-3:50PM ET",
@@ -27,13 +33,7 @@
       "symbol": "Bitcoin Up or Down - May 30, 8:25AM-8:30AM ET",
       "price": "$1.000",
       "size": "0.00"
-    },
-    {
-      "side": "REDEEM NO",
-      "symbol": "Will S&P 500 (SPY) hit (LOW) $735 Week of May 25 2026?",
-      "price": "$1.000",
-      "size": "0.00"
     }
   ],
-  "updatedAt": "5/31/2026, 3:49:15 PM ET"
+  "updatedAt": "5/31/2026, 5:02:24 PM ET"
 }
