@@ -1,6 +1,6 @@
 {
   "balanceUsd": "$0.00",
-  "exposureUsd": "$1.35",
+  "exposureUsd": "$1.37",
   "positionsCount": 3,
   "totalPnlUsd": "-$106.78",
   "lastTrades": [
@@ -35,5 +35,5 @@
       "size": "6.49"
     }
   ],
-  "updatedAt": "7/27/2026, 12:22:06 AM ET"
+  "updatedAt": "7/27/2026, 4:01:52 AM ET"
 }
