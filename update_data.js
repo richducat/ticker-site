@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { getJsonWithRetry } from './fetch_json.js';
 
 const apiBase = process.env.SIMMER_API_BASE || 'https://api.simmer.markets';
 const credsPath = process.env.SIMMER_CREDS_PATH || '/Users/RichardDucat_1/.config/simmer/credentials.json';
@@ -17,12 +18,8 @@ function resolveApiKey() {
 
 const apiKey = resolveApiKey();
 
-async function getJson(url) {
-  const res = await fetch(url, {
-    headers: { Authorization: `Bearer ${apiKey}` }
-  });
-  if (!res.ok) throw new Error(`HTTP ${res.status} ${url}`);
-  return res.json();
+function getJson(url) {
+  return getJsonWithRetry(url, apiKey);
 }
 
 function fmtUsd(n) {
